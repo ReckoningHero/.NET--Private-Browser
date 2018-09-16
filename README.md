@@ -1,3 +1,3 @@
 # C Sharp .NET: Private Browser
 
-A private browser
+A browser that elimates any user's information stored in the search engine.
