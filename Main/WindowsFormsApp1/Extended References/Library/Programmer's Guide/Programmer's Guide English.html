@@ -1,0 +1,1530 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Programmer's-Guide-English</title><style>@import 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css';code{color:#c7254e;background-color:#f9f2f4;border-radius:4px}code,kbd{padding:2px 4px}kbd{color:#fff;background-color:#333;border-radius:3px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.25)}kbd kbd{padding:0;font-size:100%;box-shadow:none}pre{display:block;margin:0 0 10px;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}.pre-scrollable{max-height:340px;overflow-y:scroll}table{background-color:transparent}th{text-align:left}.table{width:100%;max-width:100%;margin-bottom:20px}.table>thead>tr>th{padding:8px;line-height:1.4285714;border-top:1px solid #ddd}.table>thead>tr>td,.table>tbody>tr>th,.table>tbody>tr>td,.table>tfoot>tr>th,.table>tfoot>tr>td{padding:8px;line-height:1.4285714;vertical-align:top;border-top:1px solid #ddd}.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.table>caption+thead>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>th,.table>thead:first-child>tr:first-child>td{border-top:0}.table>tbody+tbody{border-top:2px solid #ddd}.table .table{background-color:#fff}.table-condensed>thead>tr>th,.table-condensed>thead>tr>td,.table-condensed>tbody>tr>th,.table-condensed>tbody>tr>td,.table-condensed>tfoot>tr>th,.table-condensed>tfoot>tr>td{padding:5px}.table-bordered,.table-bordered>thead>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>tfoot>tr>td{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>thead>tr>td{border-bottom-width:2px}.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th{background-color:#f9f9f9}.table-hover>tbody>tr:hover>td,.table-hover>tbody>tr:hover>th{background-color:#f5f5f5}table col[class*="col-"]{position:static;float:none;display:table-column}table td[class*="col-"],table th[class*="col-"]{position:static;float:none;display:table-cell}.table>thead>tr>td.active,.table>thead>tr>th.active,.table>thead>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr>td.active,.table>tbody>tr>th.active,.table>tbody>tr.active>td,.table>tbody>tr.active>th,.table>tfoot>tr>td.active,.table>tfoot>tr>th.active,.table>tfoot>tr.active>td,.table>tfoot>tr.active>th{background-color:#f5f5f5}.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr.active:hover>th{background-color:#e8e8e8}.table>thead>tr>td.success,.table>thead>tr>th.success,.table>thead>tr.success>td,.table>thead>tr.success>th,.table>tbody>tr>td.success,.table>tbody>tr>th.success,.table>tbody>tr.success>td,.table>tbody>tr.success>th,.table>tfoot>tr>td.success,.table>tfoot>tr>th.success,.table>tfoot>tr.success>td,.table>tfoot>tr.success>th{background-color:#dff0d8}.table-hover>tbody>tr>td.success:hover,.table-hover>tbody>tr>th.success:hover,.table-hover>tbody>tr.success:hover>td,.table-hover>tbody>tr:hover>.success,.table-hover>tbody>tr.success:hover>th{background-color:#d0e9c6}.table>thead>tr>td.info,.table>thead>tr>th.info,.table>thead>tr.info>td,.table>thead>tr.info>th,.table>tbody>tr>td.info,.table>tbody>tr>th.info,.table>tbody>tr.info>td,.table>tbody>tr.info>th,.table>tfoot>tr>td.info,.table>tfoot>tr>th.info,.table>tfoot>tr.info>td,.table>tfoot>tr.info>th{background-color:#d9edf7}.table-hover>tbody>tr>td.info:hover,.table-hover>tbody>tr>th.info:hover,.table-hover>tbody>tr.info:hover>td,.table-hover>tbody>tr:hover>.info,.table-hover>tbody>tr.info:hover>th{background-color:#c4e3f3}.table>thead>tr>td.warning,.table>thead>tr>th.warning,.table>thead>tr.warning>td,.table>thead>tr.warning>th,.table>tbody>tr>td.warning,.table>tbody>tr>th.warning,.table>tbody>tr.warning>td,.table>tbody>tr.warning>th,.table>tfoot>tr>td.warning,.table>tfoot>tr>th.warning,.table>tfoot>tr.warning>td,.table>tfoot>tr.warning>th{background-color:#fcf8e3}.table-hover>tbody>tr>td.warning:hover,.table-hover>tbody>tr>th.warning:hover,.table-hover>tbody>tr.warning:hover>td,.table-hover>tbody>tr:hover>.warning,.table-hover>tbody>tr.warning:hover>th{background-color:#faf2cc}.table>thead>tr>td.danger,.table>thead>tr>th.danger,.table>thead>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr>td.danger,.table>tbody>tr>th.danger,.table>tbody>tr.danger>td,.table>tbody>tr.danger>th,.table>tfoot>tr>td.danger,.table>tfoot>tr>th.danger,.table>tfoot>tr.danger>td,.table>tfoot>tr.danger>th{background-color:#f2dede}.table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr:hover>.danger,.table-hover>tbody>tr.danger:hover>th{background-color:#ebcccc}fieldset{border:0;min-width:0}legend{display:block;width:100%;margin-bottom:20px;font-size:21px;line-height:inherit;color:#333;border-bottom:1px solid #e5e5e5}label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}input[type="radio"],input[type="checkbox"]{margin:4px 0 0;margin-top:1px \9;line-height:normal}input[type="file"]{display:block}input[type="range"]{display:block;width:100%}select[multiple],select[size]{height:auto}input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}output{padding-top:7px}output,.form-control{display:block;font-size:14px;line-height:1.4285714;color:#555}.form-control{width:100%;height:34px;padding:6px 12px;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}.form-control:focus{border-color:#66afe9;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}.form-control::-moz-placeholder{color:#777;opacity:1}.form-control:-ms-input-placeholder{color:#777}.form-control::-webkit-input-placeholder{color:#777}.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{cursor:not-allowed;background-color:#eee;opacity:1}textarea.form-control{height:auto}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{line-height:34px;line-height:1.4285714 \0}input[type="date"].input-sm,.form-horizontal .form-group-sm input[type="date"].form-control,.input-group-sm>input[type="date"].form-control,.input-group-sm>input[type="date"].input-group-addon,.input-group-sm>.input-group-btn>input[type="date"].btn,input[type="time"].input-sm,.form-horizontal .form-group-sm input[type="time"].form-control,.input-group-sm>input[type="time"].form-control,.input-group-sm>input[type="time"].input-group-addon,.input-group-sm>.input-group-btn>input[type="time"].btn,input[type="datetime-local"].input-sm,.form-horizontal .form-group-sm input[type="datetime-local"].form-control,.input-group-sm>input[type="datetime-local"].form-control,.input-group-sm>input[type="datetime-local"].input-group-addon,.input-group-sm>.input-group-btn>input[type="datetime-local"].btn,input[type="month"].input-sm,.form-horizontal .form-group-sm input[type="month"].form-control,.input-group-sm>input[type="month"].form-control,.input-group-sm>input[type="month"].input-group-addon,.input-group-sm>.input-group-btn>input[type="month"].btn{line-height:30px}input[type="date"].input-lg,.form-horizontal .form-group-lg input[type="date"].form-control,.input-group-lg>input[type="date"].form-control,.input-group-lg>input[type="date"].input-group-addon,.input-group-lg>.input-group-btn>input[type="date"].btn,input[type="time"].input-lg,.form-horizontal .form-group-lg input[type="time"].form-control,.input-group-lg>input[type="time"].form-control,.input-group-lg>input[type="time"].input-group-addon,.input-group-lg>.input-group-btn>input[type="time"].btn,input[type="datetime-local"].input-lg,.form-horizontal .form-group-lg input[type="datetime-local"].form-control,.input-group-lg>input[type="datetime-local"].form-control,.input-group-lg>input[type="datetime-local"].input-group-addon,.input-group-lg>.input-group-btn>input[type="datetime-local"].btn,input[type="month"].input-lg,.form-horizontal .form-group-lg input[type="month"].form-control,.input-group-lg>input[type="month"].form-control,.input-group-lg>input[type="month"].input-group-addon,.input-group-lg>.input-group-btn>input[type="month"].btn{line-height:46px}.form-group{margin-bottom:15px}.radio,.checkbox{position:relative;display:block;min-height:20px;margin-top:10px;margin-bottom:10px}.radio label,.checkbox label{padding-left:20px;margin-bottom:0;font-weight:400;cursor:pointer}.radio input[type="radio"],.radio-inline input[type="radio"],.checkbox input[type="checkbox"],.checkbox-inline input[type="checkbox"]{position:absolute;margin-left:-20px;margin-top:4px \9}.radio+.radio,.checkbox+.checkbox{margin-top:-5px}.radio-inline,.checkbox-inline{display:inline-block;padding-left:20px;margin-bottom:0;vertical-align:middle;font-weight:400;cursor:pointer}.radio-inline+.radio-inline,.checkbox-inline+.checkbox-inline{margin-top:0;margin-left:10px}input[type="radio"][disabled],input[type="radio"].disabled,fieldset[disabled] input[type="radio"],input[type="checkbox"][disabled],input[type="checkbox"].disabled,fieldset[disabled] input[type="checkbox"],.radio-inline.disabled,fieldset[disabled] .radio-inline,.checkbox-inline.disabled,fieldset[disabled] .checkbox-inline,.radio.disabled label,fieldset[disabled] .radio label,.checkbox.disabled label,fieldset[disabled] .checkbox label{cursor:not-allowed}.form-control-static{padding-top:7px;padding-bottom:7px;margin-bottom:0}.form-control-static.input-lg,.form-horizontal .form-group-lg .form-control-static.form-control,.input-group-lg>.form-control-static.form-control,.input-group-lg>.form-control-static.input-group-addon,.input-group-lg>.input-group-btn>.form-control-static.btn,.form-control-static.input-sm,.form-horizontal .form-group-sm .form-control-static.form-control,.input-group-sm>.form-control-static.form-control,.input-group-sm>.form-control-static.input-group-addon,.input-group-sm>.input-group-btn>.form-control-static.btn{padding-left:0;padding-right:0}.input-sm,.form-horizontal .form-group-sm .form-control,.input-group-sm>.form-control{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.input-group-sm>.input-group-addon{height:30px;line-height:1.5}.input-group-sm>.input-group-btn>.btn{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}select.input-sm,.form-horizontal .form-group-sm select.form-control,.input-group-sm>select.form-control,.input-group-sm>select.input-group-addon,.input-group-sm>.input-group-btn>select.btn{height:30px;line-height:30px}textarea.input-sm,.form-horizontal .form-group-sm textarea.form-control,.input-group-sm>textarea.form-control,.input-group-sm>textarea.input-group-addon,.input-group-sm>.input-group-btn>textarea.btn,select[multiple].input-sm,.form-horizontal .form-group-sm select[multiple].form-control,.input-group-sm>select[multiple].form-control,.input-group-sm>select[multiple].input-group-addon,.input-group-sm>.input-group-btn>select[multiple].btn{height:auto}.input-lg,.form-horizontal .form-group-lg .form-control,.input-group-lg>.form-control{height:46px;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}.input-group-lg>.input-group-addon{height:46px;line-height:1.33}.input-group-lg>.input-group-btn>.btn{height:46px;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}select.input-lg,.form-horizontal .form-group-lg select.form-control,.input-group-lg>select.form-control,.input-group-lg>select.input-group-addon,.input-group-lg>.input-group-btn>select.btn{height:46px;line-height:46px}textarea.input-lg,.form-horizontal .form-group-lg textarea.form-control,.input-group-lg>textarea.form-control,.input-group-lg>textarea.input-group-addon,.input-group-lg>.input-group-btn>textarea.btn,select[multiple].input-lg,.form-horizontal .form-group-lg select[multiple].form-control,.input-group-lg>select[multiple].form-control,.input-group-lg>select[multiple].input-group-addon,.input-group-lg>.input-group-btn>select[multiple].btn{height:auto}.has-feedback{position:relative}.has-feedback .form-control{padding-right:42.5px}.form-control-feedback{position:absolute;top:25px;right:0;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center}.input-lg+.form-control-feedback,.form-horizontal .form-group-lg .form-control+.form-control-feedback,.input-group-lg>.form-control+.form-control-feedback,.input-group-lg>.input-group-addon+.form-control-feedback,.input-group-lg>.input-group-btn>.btn+.form-control-feedback{width:46px;height:46px;line-height:46px}.input-sm+.form-control-feedback,.form-horizontal .form-group-sm .form-control+.form-control-feedback,.input-group-sm>.form-control+.form-control-feedback,.input-group-sm>.input-group-addon+.form-control-feedback,.input-group-sm>.input-group-btn>.btn+.form-control-feedback{width:30px;height:30px;line-height:30px}.has-success .help-block,.has-success .control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline{color:#3c763d}.has-success .form-control{border-color:#3c763d;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-success .form-control:focus{border-color:#2b542c;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #67b168}.has-success .input-group-addon{color:#3c763d;border-color:#3c763d;background-color:#dff0d8}.has-success .form-control-feedback{color:#3c763d}.has-warning .help-block,.has-warning .control-label,.has-warning .radio,.has-warning .checkbox,.has-warning .radio-inline,.has-warning .checkbox-inline{color:#8a6d3b}.has-warning .form-control{border-color:#8a6d3b;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-warning .form-control:focus{border-color:#66512c;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c0a16b}.has-warning .input-group-addon{color:#8a6d3b;border-color:#8a6d3b;background-color:#fcf8e3}.has-warning .form-control-feedback{color:#8a6d3b}.has-error .help-block,.has-error .control-label,.has-error .radio,.has-error .checkbox,.has-error .radio-inline,.has-error .checkbox-inline{color:#a94442}.has-error .form-control{border-color:#a94442;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-error .form-control:focus{border-color:#843534;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483}.has-error .input-group-addon{color:#a94442;border-color:#a94442;background-color:#f2dede}.has-error .form-control-feedback{color:#a94442}.has-feedback label.sr-only~.form-control-feedback{top:0}.help-block{display:block;margin-top:5px;margin-bottom:10px;color:#737373}.form-horizontal .radio,.form-horizontal .checkbox,.form-horizontal .radio-inline,.form-horizontal .checkbox-inline{margin-top:0;margin-bottom:0;padding-top:7px}.form-horizontal .radio,.form-horizontal .checkbox{min-height:27px}.form-horizontal .form-group{margin-left:-15px;margin-right:-15px}.form-horizontal .form-group:before{content:" ";display:table}.form-horizontal .form-group:after{content:" ";display:table;clear:both}.form-horizontal .has-feedback .form-control-feedback{top:0;right:15px}.btn{display:inline-block;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn:focus,.btn:active:focus,.btn.active:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:hover,.btn:focus{color:#333;text-decoration:none}.btn:active,.btn.active{outline:0;background-image:none;box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:not-allowed;pointer-events:none;opacity:.65;filter:alpha(opacity=65);box-shadow:none}.btn-default{color:#333;background-color:#fff;border-color:#ccc}.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open>.btn-default.dropdown-toggle{color:#333;background-color:#e6e6e6;border-color:#adadad}.btn-default:active,.btn-default.active,.open>.btn-default.dropdown-toggle{background-image:none}.btn-default.disabled,.btn-default.disabled:hover,.btn-default.disabled:focus,.btn-default.disabled:active,.btn-default.disabled.active,.btn-default[disabled],.btn-default[disabled]:hover,.btn-default[disabled]:focus,.btn-default[disabled]:active,.btn-default[disabled].active,fieldset[disabled] .btn-default,fieldset[disabled] .btn-default:hover,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:active,fieldset[disabled] .btn-default.active{background-color:#fff;border-color:#ccc}.btn-default .badge{color:#fff;background-color:#333}.btn-primary{color:#fff;background-color:#428bca;border-color:#357ebd}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle{color:#fff;background-color:#3071a9;border-color:#285e8e}.btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle{background-image:none}.btn-primary.disabled,.btn-primary.disabled:hover,.btn-primary.disabled:focus,.btn-primary.disabled:active,.btn-primary.disabled.active,.btn-primary[disabled],.btn-primary[disabled]:hover,.btn-primary[disabled]:focus,.btn-primary[disabled]:active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary,fieldset[disabled] .btn-primary:hover,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:active,fieldset[disabled] .btn-primary.active{background-color:#428bca;border-color:#357ebd}.btn-primary .badge{color:#428bca;background-color:#fff}.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c}.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active,.open>.btn-success.dropdown-toggle{color:#fff;background-color:#449d44;border-color:#398439}.btn-success:active,.btn-success.active,.open>.btn-success.dropdown-toggle{background-image:none}.btn-success.disabled,.btn-success.disabled:hover,.btn-success.disabled:focus,.btn-success.disabled:active,.btn-success.disabled.active,.btn-success[disabled],.btn-success[disabled]:hover,.btn-success[disabled]:focus,.btn-success[disabled]:active,.btn-success[disabled].active,fieldset[disabled] .btn-success,fieldset[disabled] .btn-success:hover,fieldset[disabled] .btn-success:focus,fieldset[disabled] .btn-success:active,fieldset[disabled] .btn-success.active{background-color:#5cb85c;border-color:#4cae4c}.btn-success .badge{color:#5cb85c;background-color:#fff}.btn-info{color:#fff;background-color:#5bc0de;border-color:#46b8da}.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.open>.btn-info.dropdown-toggle{color:#fff;background-color:#31b0d5;border-color:#269abc}.btn-info:active,.btn-info.active,.open>.btn-info.dropdown-toggle{background-image:none}.btn-info.disabled,.btn-info.disabled:hover,.btn-info.disabled:focus,.btn-info.disabled:active,.btn-info.disabled.active,.btn-info[disabled],.btn-info[disabled]:hover,.btn-info[disabled]:focus,.btn-info[disabled]:active,.btn-info[disabled].active,fieldset[disabled] .btn-info,fieldset[disabled] .btn-info:hover,fieldset[disabled] .btn-info:focus,fieldset[disabled] .btn-info:active,fieldset[disabled] .btn-info.active{background-color:#5bc0de;border-color:#46b8da}.btn-info .badge{color:#5bc0de;background-color:#fff}.btn-warning{color:#fff;background-color:#f0ad4e;border-color:#eea236}.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,.open>.btn-warning.dropdown-toggle{color:#fff;background-color:#ec971f;border-color:#d58512}.btn-warning:active,.btn-warning.active,.open>.btn-warning.dropdown-toggle{background-image:none}.btn-warning.disabled,.btn-warning.disabled:hover,.btn-warning.disabled:focus,.btn-warning.disabled:active,.btn-warning.disabled.active,.btn-warning[disabled],.btn-warning[disabled]:hover,.btn-warning[disabled]:focus,.btn-warning[disabled]:active,.btn-warning[disabled].active,fieldset[disabled] .btn-warning,fieldset[disabled] .btn-warning:hover,fieldset[disabled] .btn-warning:focus,fieldset[disabled] .btn-warning:active,fieldset[disabled] .btn-warning.active{background-color:#f0ad4e;border-color:#eea236}.btn-warning .badge{color:#f0ad4e;background-color:#fff}.btn-danger{color:#fff;background-color:#d9534f;border-color:#d43f3a}.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,.open>.btn-danger.dropdown-toggle{color:#fff;background-color:#c9302c;border-color:#ac2925}.btn-danger:active,.btn-danger.active,.open>.btn-danger.dropdown-toggle{background-image:none}.btn-danger.disabled,.btn-danger.disabled:hover,.btn-danger.disabled:focus,.btn-danger.disabled:active,.btn-danger.disabled.active,.btn-danger[disabled],.btn-danger[disabled]:hover,.btn-danger[disabled]:focus,.btn-danger[disabled]:active,.btn-danger[disabled].active,fieldset[disabled] .btn-danger,fieldset[disabled] .btn-danger:hover,fieldset[disabled] .btn-danger:focus,fieldset[disabled] .btn-danger:active,fieldset[disabled] .btn-danger.active{background-color:#d9534f;border-color:#d43f3a}.btn-danger .badge{color:#d9534f;background-color:#fff}.btn-link{color:#428bca;font-weight:400;cursor:pointer;border-radius:0}.btn-link,.btn-link:active,.btn-link[disabled],fieldset[disabled] .btn-link{background-color:transparent;box-shadow:none}.btn-link,.btn-link:hover,.btn-link:focus,.btn-link:active{border-color:transparent}.btn-link:hover,.btn-link:focus{color:#2a6496;text-decoration:underline;background-color:transparent}.btn-link[disabled]:hover,.btn-link[disabled]:focus,fieldset[disabled] .btn-link:hover,fieldset[disabled] .btn-link:focus{color:#777;text-decoration:none}.btn-lg{padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px}.btn-sm{padding:5px 10px}.btn-sm,.btn-xs{font-size:12px;line-height:1.5;border-radius:3px}.btn-xs{padding:1px 5px}.btn-block{display:block;width:100%}.btn-block+.btn-block{margin-top:5px}input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%}.fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}.fade.in{opacity:1}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}tbody.collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}.input-group{position:relative;display:table;border-collapse:separate}.input-group[class*="col-"]{float:none;padding-left:0;padding-right:0}.input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group-addon,.input-group-btn,.input-group .form-control{display:table-cell}.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child){border-radius:0}.input-group-addon{white-space:nowrap}.input-group-addon,.input-group-btn{width:1%;vertical-align:middle}.input-group-addon{padding:6px 12px;font-size:14px;font-weight:400;line-height:1;color:#555;text-align:center;background-color:#eee;border:1px solid #ccc;border-radius:4px}.input-group-addon.input-sm,.form-horizontal .form-group-sm .input-group-addon.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.input-group-addon.btn{padding:5px 10px;font-size:12px;border-radius:3px}.input-group-addon.input-lg,.form-horizontal .form-group-lg .input-group-addon.form-control,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.input-group-addon.btn{padding:10px 16px;font-size:18px;border-radius:6px}.input-group-addon input[type="radio"],.input-group-addon input[type="checkbox"]{margin-top:0}.input-group .form-control:first-child,.input-group-addon:first-child,.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group>.btn,.input-group-btn:first-child>.dropdown-toggle,.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),.input-group-btn:last-child>.btn-group:not(:last-child)>.btn{border-bottom-right-radius:0;border-top-right-radius:0}.input-group-addon:first-child{border-right:0}.input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group>.btn,.input-group-btn:last-child>.dropdown-toggle,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:first-child>.btn-group:not(:first-child)>.btn{border-bottom-left-radius:0;border-top-left-radius:0}.input-group-addon:last-child{border-left:0}.input-group-btn{font-size:0;white-space:nowrap}.input-group-btn,.input-group-btn>.btn{position:relative}.input-group-btn>.btn+.btn{margin-left:-1px}.input-group-btn>.btn:hover,.input-group-btn>.btn:focus,.input-group-btn>.btn:active{z-index:2}.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group{margin-right:-1px}.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group{margin-left:-1px}.pagination{display:inline-block;padding-left:0;margin:20px 0;border-radius:4px}.pagination>li{display:inline}.pagination>li>a,.pagination>li>span{position:relative;float:left;padding:6px 12px;line-height:1.4285714;text-decoration:none;color:#428bca;background-color:#fff;border:1px solid #ddd;margin-left:-1px}.pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-bottom-left-radius:4px;border-top-left-radius:4px}.pagination>li:last-child>a,.pagination>li:last-child>span{border-bottom-right-radius:4px;border-top-right-radius:4px}.pagination>li>a:hover,.pagination>li>a:focus,.pagination>li>span:hover,.pagination>li>span:focus{color:#2a6496;background-color:#eee;border-color:#ddd}.pagination>.active>a,.pagination>.active>a:hover,.pagination>.active>a:focus,.pagination>.active>span,.pagination>.active>span:hover,.pagination>.active>span:focus{z-index:2;color:#fff;background-color:#428bca;border-color:#428bca;cursor:default}.pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus{color:#777;background-color:#fff;border-color:#ddd;cursor:not-allowed}.pagination-lg>li>a,.pagination-lg>li>span{padding:10px 16px;font-size:18px}.pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span{border-bottom-left-radius:6px;border-top-left-radius:6px}.pagination-lg>li:last-child>a,.pagination-lg>li:last-child>span{border-bottom-right-radius:6px;border-top-right-radius:6px}.pagination-sm>li>a,.pagination-sm>li>span{padding:5px 10px;font-size:12px}.pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span{border-bottom-left-radius:3px;border-top-left-radius:3px}.pagination-sm>li:last-child>a,.pagination-sm>li:last-child>span{border-bottom-right-radius:3px;border-top-right-radius:3px}.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer;opacity:.5;filter:alpha(opacity=50)}button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.modal-open,.modal{overflow:hidden}.modal{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}.modal.fade .modal-dialog{-webkit-transform:translate3d(0,-25%,0);transform:translate3d(0,-25%,0);-webkit-transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal-dialog{position:relative;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;border:1px solid #999;border:1px solid rgba(0,0,0,.2);border-radius:6px;box-shadow:0 3px 9px rgba(0,0,0,.5);background-clip:padding-box;outline:0}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}.modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}.modal-backdrop.in{opacity:.5;filter:alpha(opacity=50)}.modal-header{padding:15px;border-bottom:1px solid #e5e5e5;min-height:16.4285714px}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.4285714}.modal-body{position:relative;padding:15px}.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer:before,.modal-footer:after{content:" ";display:table}.modal-footer:after{clear:both}.modal-footer .btn+.btn{margin-left:5px;margin-bottom:0}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.hljs{display:block;overflow-x:auto;padding:.5em;background:#002b36;color:#839496;-webkit-text-size-adjust:none}.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-doctype,.hljs-pi,.lisp .hljs-string,.hljs-javadoc{color:#586e75}.hljs-keyword,.hljs-winutils,.method,.hljs-addition,.css .hljs-tag,.hljs-request,.hljs-status,.nginx .hljs-title{color:#859900}.hljs-number,.hljs-command,.hljs-string,.hljs-tag .hljs-value,.hljs-rules .hljs-value,.hljs-phpdoc,.hljs-dartdoc,.tex .hljs-formula,.hljs-regexp,.hljs-hexcolor,.hljs-link_url{color:#2aa198}.hljs-title,.hljs-localvars,.hljs-chunk,.hljs-decorator,.hljs-built_in,.hljs-identifier,.vhdl .hljs-literal,.hljs-id,.css .hljs-function{color:#268bd2}.hljs-attribute,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number,.hljs-constant,.hljs-class .hljs-title,.hljs-parent,.hljs-type,.hljs-link_reference{color:#b58900}.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-pragma,.hljs-shebang,.hljs-symbol,.hljs-symbol .hljs-string,.diff .hljs-change,.hljs-special,.hljs-attr_selector,.hljs-subst,.hljs-cdata,.css .hljs-pseudo,.hljs-header{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#073642}*,*:before,*:after{box-sizing:border-box}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}images{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd{font-size:1em}code,kbd,pre,samp{font-family:monospace,monospace}samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}.debug{background-color:#ffc0cb!important}.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ir{background-color:transparent;border:0;overflow:hidden}.ir::before{content:'';display:block;height:150%;width:0}html{font-size:.875em;background:#fff;color:#373D49}html,body{font-family:Georgia,Cambria,serif;height:100%}body{font-size:1rem;font-weight:400;line-height:2rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}li{-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-left:1rem}li>ul,li>ol{margin-bottom:0}p{padding-top:.66001rem;-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-top:0}p,pre{margin-bottom:1.33999rem}pre{font-size:1rem;padding:.66001rem 9.5px 9.5px;line-height:2rem;background:-webkit-linear-gradient(top,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background:linear-gradient(to bottom,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background-size:100% 4rem;border-color:#D3DAEA}blockquote{margin:0}blockquote p{font-size:1rem;margin-bottom:.33999rem;font-style:italic;padding:.66001rem 1rem 1rem;border-left:3px solid #A0AABF}th,td{padding:12px}h1,h2,h3,h4,h5,h6{font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-style:normal;font-weight:600;margin-top:0}h1{line-height:3rem;font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h2,h3{line-height:3rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}a{cursor:pointer;color:#35D7BB;text-decoration:none}a:hover,a:focus{border-bottom-color:#35D7BB;color:#dff9f4}img{height:auto;max-width:100%}.g{display:block}.g:after{clear:both;content:'';display:table}.g-b{float:left;margin:0;width:100%}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--center{display:block;float:none;margin:0 auto}.g-b--right{float:right}.g-b--1of1{width:100%}.g-b--1of2,.g-b--2of4,.g-b--3of6,.g-b--4of8,.g-b--5of10,.g-b--6of12{width:50%}.g-b--1of3,.g-b--2of6,.g-b--4of12{width:33.333%}.g-b--2of3,.g-b--4of6,.g-b--8of12{width:66.666%}.g-b--1of4,.g-b--2of8,.g-b--3of12{width:25%}.g-b--3of4,.g-b--6of8,.g-b--9of12{width:75%}.g-b--1of5,.g-b--2of10{width:20%}.g-b--2of5,.g-b--4of10{width:40%}.g-b--3of5,.g-b--6of10{width:60%}.g-b--4of5,.g-b--8of10{width:80%}.g-b--1of6,.g-b--2of12{width:16.666%}.g-b--5of6,.g-b--10of12{width:83.333%}.g-b--1of8{width:12.5%}.g-b--3of8{width:37.5%}.g-b--5of8{width:62.5%}.g-b--7of8{width:87.5%}.g-b--1of10{width:10%}.g-b--3of10{width:30%}.g-b--7of10{width:70%}.g-b--9of10{width:90%}.g-b--1of12{width:8.333%}.g-b--5of12{width:41.666%}.g-b--7of12{width:58.333%}.g-b--11of12{width:91.666%}.g-b--push--1of1{margin-left:100%}.g-b--push--1of2,.g-b--push--2of4,.g-b--push--3of6,.g-b--push--4of8,.g-b--push--5of10,.g-b--push--6of12{margin-left:50%}.g-b--push--1of3,.g-b--push--2of6,.g-b--push--4of12{margin-left:33.333%}.g-b--push--2of3,.g-b--push--4of6,.g-b--push--8of12{margin-left:66.666%}.g-b--push--1of4,.g-b--push--2of8,.g-b--push--3of12{margin-left:25%}.g-b--push--3of4,.g-b--push--6of8,.g-b--push--9of12{margin-left:75%}.g-b--push--1of5,.g-b--push--2of10{margin-left:20%}.g-b--push--2of5,.g-b--push--4of10{margin-left:40%}.g-b--push--3of5,.g-b--push--6of10{margin-left:60%}.g-b--push--4of5,.g-b--push--8of10{margin-left:80%}.g-b--push--1of6,.g-b--push--2of12{margin-left:16.666%}.g-b--push--5of6,.g-b--push--10of12{margin-left:83.333%}.g-b--push--1of8{margin-left:12.5%}.g-b--push--3of8{margin-left:37.5%}.g-b--push--5of8{margin-left:62.5%}.g-b--push--7of8{margin-left:87.5%}.g-b--push--1of10{margin-left:10%}.g-b--push--3of10{margin-left:30%}.g-b--push--7of10{margin-left:70%}.g-b--push--9of10{margin-left:90%}.g-b--push--1of12{margin-left:8.333%}.g-b--push--5of12{margin-left:41.666%}.g-b--push--7of12{margin-left:58.333%}.g-b--push--11of12{margin-left:91.666%}.g-b--pull--1of1{margin-right:100%}.g-b--pull--1of2,.g-b--pull--2of4,.g-b--pull--3of6,.g-b--pull--4of8,.g-b--pull--5of10,.g-b--pull--6of12{margin-right:50%}.g-b--pull--1of3,.g-b--pull--2of6,.g-b--pull--4of12{margin-right:33.333%}.g-b--pull--2of3,.g-b--pull--4of6,.g-b--pull--8of12{margin-right:66.666%}.g-b--pull--1of4,.g-b--pull--2of8,.g-b--pull--3of12{margin-right:25%}.g-b--pull--3of4,.g-b--pull--6of8,.g-b--pull--9of12{margin-right:75%}.g-b--pull--1of5,.g-b--pull--2of10{margin-right:20%}.g-b--pull--2of5,.g-b--pull--4of10{margin-right:40%}.g-b--pull--3of5,.g-b--pull--6of10{margin-right:60%}.g-b--pull--4of5,.g-b--pull--8of10{margin-right:80%}.g-b--pull--1of6,.g-b--pull--2of12{margin-right:16.666%}.g-b--pull--5of6,.g-b--pull--10of12{margin-right:83.333%}.g-b--pull--1of8{margin-right:12.5%}.g-b--pull--3of8{margin-right:37.5%}.g-b--pull--5of8{margin-right:62.5%}.g-b--pull--7of8{margin-right:87.5%}.g-b--pull--1of10{margin-right:10%}.g-b--pull--3of10{margin-right:30%}.g-b--pull--7of10{margin-right:70%}.g-b--pull--9of10{margin-right:90%}.g-b--pull--1of12{margin-right:8.333%}.g-b--pull--5of12{margin-right:41.666%}.g-b--pull--7of12{margin-right:58.333%}.g-b--pull--11of12{margin-right:91.666%}.splashscreen{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#373D49;z-index:22}.splashscreen-dillinger{width:260px;height:auto;display:block;margin:0 auto;padding-bottom:3rem}.splashscreen p{font-size:1.25rem;padding-top:.56251rem;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;text-align:center;max-width:500px;margin:0 auto;color:#FFF}.sp-center{position:relative;-webkit-transform:translateY(-50%);transform:translateY(-50%);top:50%}.open-menu>.wrapper{overflow-x:hidden}.page{margin:0 auto;position:relative;top:0;left:0;width:100%;height:100%;z-index:2;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;background-color:#fff;padding-top:51px;will-change:left}.open-menu .page{left:270px}.title{line-height:1rem;font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem;font-weight:500;color:#A0AABF;letter-spacing:1px;text-transform:uppercase;padding-left:16px;padding-right:16px;margin-top:1rem}.split-preview .title{padding-left:0}.title-document{line-height:1rem;font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem;font-weight:400;font-family:"Ubuntu Mono",Monaco;color:#373D49;padding-left:16px;padding-right:16px;width:80%;min-width:300px;outline:0;border:none}.icon{display:block;margin:0 auto;width:36px;height:36px;border-radius:3px;text-align:center}.icon svg{display:inline-block;margin-left:auto;margin-right:auto}.icon-preview{background-color:#373D49;line-height:40px}.icon-preview svg{width:19px;height:12px}.icon-settings{background-color:#373D49;line-height:44px}.icon-settings svg{width:18px;height:18px}.icon-link{width:16px;height:16px;line-height:1;margin-right:24px;text-align:right}.navbar{background-color:#373D49;height:51px;width:100%;position:fixed;top:0;left:0;z-index:6;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;will-change:left}.navbar:after{content:"";display:table;clear:both}.open-menu .navbar{left:270px}.navbar-brand{float:left;margin:0 0 0 24px;padding:0;line-height:42px}.navbar-brand svg{width:85px;height:11px}.nav-left{float:left}.nav-right{float:right}.nav-sidebar{width:100%}.menu{list-style:none;margin:0;padding:0}.menu a{border:0;color:#A0AABF;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;outline:none;text-transform:uppercase}.menu a:hover{color:#35D7BB}.menu .menu-item{border:0;display:none;float:left;margin:0;position:relative}.menu .menu-item>a{display:block;font-size:12px;height:51px;letter-spacing:1px;line-height:51px;padding:0 24px}.menu .menu-item--settings,.menu .menu-item--preview,.menu .menu-item--save-to.in-sidebar,.menu .menu-item--import-from.in-sidebar,.menu .menu-item--link-unlink.in-sidebar,.menu .menu-item--documents.in-sidebar{display:block}.menu .menu-item--documents{padding-bottom:1rem}.menu .menu-item.open>a{background-color:#1D212A}.menu .menu-item-icon>a{height:auto;padding:0}.menu .menu-item-icon:hover>a{background-color:transparent}.menu .menu-link.open i{background-color:#1D212A}.menu .menu-link.open g{fill:#35D7BB}.menu .menu-link-preview,.menu .menu-link-settings{margin-top:8px;width:51px}.menu-sidebar{width:100%}.menu-sidebar .menu-item{float:none;margin-bottom:1px;width:100%}.menu-sidebar .menu-item.open>a{background-color:#373D49}.menu-sidebar .open .caret{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.menu-sidebar>.menu-item:hover .dropdown a,.menu-sidebar>.menu-item:hover .settings a{background-color:transparent}.menu-sidebar .menu-link{background-color:#373D49;font-weight:600}.menu-sidebar .menu-link:after{content:"";display:table;clear:both}.menu-sidebar .menu-link>span{float:left}.menu-sidebar .menu-link>.caret{float:right;text-align:right;top:22px}.menu-sidebar .dropdown,.menu-sidebar .settings{background-color:transparent;position:static;width:100%}.dropdown{position:absolute;right:0;top:51px;width:188px}.dropdown,.settings{display:none;background-color:#1D212A}.dropdown{padding:0}.dropdown,.settings,.sidebar-list{list-style:none;margin:0}.sidebar-list{padding:0}.dropdown li{margin:32px 0;padding:0 0 0 32px}.dropdown li,.settings li{line-height:1}.sidebar-list li{line-height:1;margin:32px 0;padding:0 0 0 32px}.dropdown a{color:#D0D6E2}.dropdown a,.settings a,.sidebar-list a{display:block;text-transform:none}.sidebar-list a{color:#D0D6E2}.dropdown a:after,.settings a:after,.sidebar-list a:after{content:"";display:table;clear:both}.dropdown .icon,.settings .icon,.sidebar-list .icon{float:right}.open .dropdown,.open .settings,.open .sidebar-list{display:block}.open .dropdown.collapse,.open .collapse.settings,.open .sidebar-list.collapse{display:none}.open .dropdown.collapse.in,.open .collapse.in.settings,.open .sidebar-list.collapse.in{display:block}.dropdown .unlinked .icon,.settings .unlinked .icon,.sidebar-list .unlinked .icon{opacity:.3}.dropdown.documents li,.documents.settings li,.sidebar-list.documents li{background-image:url("../img/icons/file.svg");background-position:240px center;background-repeat:no-repeat;background-size:14px 16px;padding:3px 32px}.dropdown.documents li.octocat,.documents.settings li.octocat,.sidebar-list.documents li.octocat{background-image:url("../img/icons/octocat.svg");background-position:234px center;background-size:24px 24px}.dropdown.documents li:last-child,.documents.settings li:last-child,.sidebar-list.documents li:last-child{margin-bottom:1rem}.dropdown.documents li.active a,.documents.settings li.active a,.sidebar-list.documents li.active a{color:#35D7BB}.settings{position:fixed;top:67px;right:16px;border-radius:3px;width:288px;background-color:#373D49;padding:16px;z-index:7}.show-settings .settings{display:block}.settings .has-checkbox{float:left}.settings a{font-size:1.25rem;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;line-height:28px;color:#D0D6E2}.settings a:after{content:"";display:table;clear:both}.settings a:hover{color:#35D7BB}.settings li{border-bottom:1px solid #4F535B;margin:0;padding:16px 0}.settings li:last-child{border-bottom:none}.brand{border:none;display:block}.brand:hover g{fill:#35D7BB}.toggle{display:block;float:left;height:16px;padding:25px 16px 26px;width:40px}.toggle span:after,.toggle span:before{content:'';left:0;position:absolute;top:-6px}.toggle span:after{top:6px}.toggle span{display:block;position:relative}.toggle span,.toggle span:after,.toggle span:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:#D3DAEA;height:2px;-webkit-transition:all .3s;transition:all .3s;width:20px}.open-menu .toggle span{background-color:transparent}.open-menu .toggle span:before{-webkit-transform:rotate(45deg) translate(3px,3px);transform:rotate(45deg) translate(3px,3px)}.open-menu .toggle span:after{-webkit-transform:rotate(-45deg) translate(5px,-6px);transform:rotate(-45deg) translate(5px,-6px)}.caret{display:inline-block;width:0;height:0;margin-left:6px;vertical-align:middle;position:relative;top:-1px;border-top:4px solid;border-right:4px solid transparent;border-left:4px solid transparent}.sidebar{overflow:auto;height:100%;padding-right:15px;padding-bottom:15px;width:285px}.sidebar-wrapper{-webkit-overflow-scrolling:touch;background-color:#2B2F36;left:0;height:100%;overflow-y:hidden;position:fixed;top:0;width:285px;z-index:1}.sidebar-branding{width:160px;padding:0;margin:16px auto}.header{border-bottom:1px solid #E8E8E8;position:relative}.words{line-height:1rem;font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem;font-weight:500;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;color:#A0AABF;letter-spacing:1px;text-transform:uppercase;z-index:5;position:absolute;right:16px;top:0}.words span{color:#000}.btn{text-align:center;display:inline-block;width:100%;text-transform:uppercase;font-weight:600;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;text-shadow:0 1px 0 #1b8b77;padding:16px 24px;background-color:#35D7BB;border-radius:3px;margin:0 auto 16px;line-height:1;color:#fff;-webkit-transition:all .15s linear;transition:all .15s linear;-webkit-font-smoothing:antialiased}.btn--new,.btn--save{display:block;width:238px}.btn--new:hover,.btn--new:focus,.btn--save:hover,.btn--save:focus{color:#fff;border-bottom-color:transparent;box-shadow:0 1px 3px #24b59c;text-shadow:0 1px 0 #24b59c}.btn--save{background-color:#4A5261;text-shadow:0 1px 1px #1e2127}.btn--save:hover,.btn--save:focus{color:#fff;border-bottom-color:transparent;box-shadow:0 1px 5px #08090a;text-shadow:none}.btn--delete{display:block;width:238px;background-color:transparent;font-size:12px;text-shadow:none}.btn--delete:hover,.btn--delete:focus{color:#fff;border-bottom-color:transparent;text-shadow:0 1px 0 #08090a;opacity:.8}.btn--delete-modal,.btn--ok,.btn--close{border-top:0;background-color:#4A5261;text-shadow:0 1px 0 #08090a;margin:0}.btn--delete-modal:hover,.btn--delete-modal:focus,.btn--ok:hover,.btn--ok:focus,.btn--close:hover,.btn--close:focus{color:#fff;background-color:#292d36;text-shadow:none}.btn--delete-modal{display:inline;width:auto}.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(55,61,73,.8);-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;will-change:left,opacity,visibility;z-index:5;opacity:0;visibility:hidden}.show-settings .overlay{visibility:visible;opacity:1}.switch{float:right;line-height:1}.switch input{display:none}.switch small{display:inline-block;cursor:pointer;padding:0 24px 0 0;-webkit-transition:all ease .2s;transition:all ease .2s;background-color:#2B2F36;border-color:#2B2F36}.switch small,.switch small:before{border-radius:30px;box-shadow:inset 0 0 2px 0 #14171F}.switch small:before{display:block;content:'';width:28px;height:28px;background:#fff}.switch.checked small{padding-right:0;padding-left:24px;background-color:#35D7BB;box-shadow:none}.modal--dillinger.about .modal-dialog{font-size:1.25rem;max-width:500px}.modal--dillinger.scope .modal-dialog{max-width:300px;margin:5rem auto}.modal--dillinger .modal-dialog{max-width:600px;width:auto;margin:5rem auto}.modal--dillinger .modal-content{background:#373D49;border-radius:3px;box-shadow:0 2px 5px 0 #2C3B59;color:#fff;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;padding:2rem}.modal--dillinger ul{list-style-type:disc;margin:1rem 0;padding:0 0 0 1rem}.modal--dillinger li{padding:0;margin:0}.modal--dillinger .modal-header{border:0;padding:0}.modal--dillinger .modal-body{padding:0}.modal--dillinger .modal-footer{border:0;padding:0}.modal--dillinger .close{color:#fff;opacity:1}.modal-backdrop{background-color:#373D49}.pagination--dillinger{padding:0!important;margin:1.5rem 0!important;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch}.pagination--dillinger,.pagination--dillinger li{display:-webkit-box;display:-ms-flexbox;display:flex}.pagination--dillinger li{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;text-align:center}.pagination--dillinger li:first-child>a,.pagination--dillinger li.disabled>a,.pagination--dillinger li.disabled>a:hover,.pagination--dillinger li.disabled>a:focus,.pagination--dillinger li>a{background-color:transparent;border-color:#4F535B;border-right-color:transparent}.pagination--dillinger li.active>a,.pagination--dillinger li.active>a:hover,.pagination--dillinger li.active>a:focus{border-color:#4A5261;background-color:#4A5261;color:#fff}.pagination--dillinger li>a{float:none;color:#fff;width:100%;display:block;text-align:center;margin:0;border-right-color:transparent;padding:6px}.pagination--dillinger li>a:hover,.pagination--dillinger li>a:focus{border-color:#35D7BB;background-color:#35D7BB;color:#fff}.pagination--dillinger li:last-child a{border-color:#4F535B}.pagination--dillinger li:first-child a{border-right-color:transparent}.diNotify{position:absolute;z-index:9999;left:0;right:0;top:0;margin:0 auto;max-width:400px;text-align:center;-webkit-transition:top .5s ease-in-out,opacity .5s ease-in-out;transition:top .5s ease-in-out,opacity .5s ease-in-out;visibility:hidden}.diNotify-body{-webkit-font-smoothing:antialiased;background-color:#35D7BB;background:#666E7F;border-radius:3px;color:#fff;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;overflow:hidden;padding:1rem 2rem .5rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.diNotify-icon{display:block;width:16px;height:16px;line-height:16px;position:relative;top:3px}.diNotify-message{padding-left:1rem}.zen-wrapper{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:10;background-color:#FFF;opacity:0;-webkit-transition:opacity .25s ease-in-out;transition:opacity .25s ease-in-out}.zen-wrapper.on{opacity:1}.enter-zen-mode{background-image:url("../img/icons/enter-zen.svg");right:.5rem;top:.313rem;display:none}.enter-zen-mode,.close-zen-mode{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background-repeat:no-repeat;width:32px;height:32px;display:block;position:absolute}.close-zen-mode{background-image:url("../img/icons/exit-zen.svg");right:1rem;top:1rem}.zen-page{position:relative;top:0;bottom:0;z-index:11;height:100%;width:100%}#zen{font-size:1.25rem;width:300px;height:80%;margin:0 auto;position:relative;top:10%}#zen:before,#zen:after{content:"";position:absolute;height:10%;width:100%;z-index:12;pointer-events:none}#preview .table{width:auto}.ui-resizable{position:relative}.ui-resizable-handle{position:absolute;font-size:.1px;z-index:99999;display:block}.ui-resizable-e{background-color:#666;border-right:8px solid #e8e8e8;border-left:1px solid #222;width:10px;z-index:88!important;position:relative}.ui-resizable-e:after{content:"-";display:block;position:absolute;top:calc(50% - 16px);left:0;height:25px;width:2px;background-color:rgba(0,0,0,.4);margin:3px}#editor{cursor:ew-resize;position:relative;z-index:auto}.profile-pic{float:left;width:250px}.ad-container a::before{color:#A0AABF;content:"Ad:  "}.ad-container{display:block;float:left;max-width:38%;word-wrap:break-word}.ad-container a{display:block;font-size:.75rem;height:51px;letter-spacing:1px;line-height:1rem;padding:18px 24px}.ad-container img{display:none}.split{overflow:scroll;padding:0!important}.split-editor{padding-left:0;padding-right:0;position:relative;z-index:3}.show-preview .split-editor{display:none}.split-preview{background-color:#fff;display:none;top:0;position:relative;z-index:4}.show-preview .split-preview{display:block}#editor{font-size:1rem;font-family:"Ubuntu Mono",Monaco;font-weight:400;line-height:2rem;width:100%;height:100%}#editor .ace_gutter{-webkit-font-smoothing:antialiased}.editor-header{width:50%;float:left;border-bottom:1px solid #E8E8E8;position:relative}.editor-header--first{border-right:1px solid #E8E8E8}.editor-header .title{display:inline-block}#preview{padding:15px}#preview a{color:#A0AABF;text-decoration:underline}.sr-only{visibility:hidden;text-overflow:110%;overflow:hidden;top:-100px;position:absolute}.mnone{margin:0!important}@media screen and (min-width:27.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--m1of1{width:100%}.g-b--m1of2,.g-b--m2of4,.g-b--m3of6,.g-b--m4of8,.g-b--m5of10,.g-b--m6of12{width:50%}.g-b--m1of3,.g-b--m2of6,.g-b--m4of12{width:33.333%}.g-b--m2of3,.g-b--m4of6,.g-b--m8of12{width:66.666%}.g-b--m1of4,.g-b--m2of8,.g-b--m3of12{width:25%}.g-b--m3of4,.g-b--m6of8,.g-b--m9of12{width:75%}.g-b--m1of5,.g-b--m2of10{width:20%}.g-b--m2of5,.g-b--m4of10{width:40%}.g-b--m3of5,.g-b--m6of10{width:60%}.g-b--m4of5,.g-b--m8of10{width:80%}.g-b--m1of6,.g-b--m2of12{width:16.666%}.g-b--m5of6,.g-b--m10of12{width:83.333%}.g-b--m1of8{width:12.5%}.g-b--m3of8{width:37.5%}.g-b--m5of8{width:62.5%}.g-b--m7of8{width:87.5%}.g-b--m1of10{width:10%}.g-b--m3of10{width:30%}.g-b--m7of10{width:70%}.g-b--m9of10{width:90%}.g-b--m1of12{width:8.333%}.g-b--m5of12{width:41.666%}.g-b--m7of12{width:58.333%}.g-b--m11of12{width:91.666%}.g-b--push--m1of1{margin-left:100%}.g-b--push--m1of2,.g-b--push--m2of4,.g-b--push--m3of6,.g-b--push--m4of8,.g-b--push--m5of10,.g-b--push--m6of12{margin-left:50%}.g-b--push--m1of3,.g-b--push--m2of6,.g-b--push--m4of12{margin-left:33.333%}.g-b--push--m2of3,.g-b--push--m4of6,.g-b--push--m8of12{margin-left:66.666%}.g-b--push--m1of4,.g-b--push--m2of8,.g-b--push--m3of12{margin-left:25%}.g-b--push--m3of4,.g-b--push--m6of8,.g-b--push--m9of12{margin-left:75%}.g-b--push--m1of5,.g-b--push--m2of10{margin-left:20%}.g-b--push--m2of5,.g-b--push--m4of10{margin-left:40%}.g-b--push--m3of5,.g-b--push--m6of10{margin-left:60%}.g-b--push--m4of5,.g-b--push--m8of10{margin-left:80%}.g-b--push--m1of6,.g-b--push--m2of12{margin-left:16.666%}.g-b--push--m5of6,.g-b--push--m10of12{margin-left:83.333%}.g-b--push--m1of8{margin-left:12.5%}.g-b--push--m3of8{margin-left:37.5%}.g-b--push--m5of8{margin-left:62.5%}.g-b--push--m7of8{margin-left:87.5%}.g-b--push--m1of10{margin-left:10%}.g-b--push--m3of10{margin-left:30%}.g-b--push--m7of10{margin-left:70%}.g-b--push--m9of10{margin-left:90%}.g-b--push--m1of12{margin-left:8.333%}.g-b--push--m5of12{margin-left:41.666%}.g-b--push--m7of12{margin-left:58.333%}.g-b--push--m11of12{margin-left:91.666%}.g-b--pull--m1of1{margin-right:100%}.g-b--pull--m1of2,.g-b--pull--m2of4,.g-b--pull--m3of6,.g-b--pull--m4of8,.g-b--pull--m5of10,.g-b--pull--m6of12{margin-right:50%}.g-b--pull--m1of3,.g-b--pull--m2of6,.g-b--pull--m4of12{margin-right:33.333%}.g-b--pull--m2of3,.g-b--pull--m4of6,.g-b--pull--m8of12{margin-right:66.666%}.g-b--pull--m1of4,.g-b--pull--m2of8,.g-b--pull--m3of12{margin-right:25%}.g-b--pull--m3of4,.g-b--pull--m6of8,.g-b--pull--m9of12{margin-right:75%}.g-b--pull--m1of5,.g-b--pull--m2of10{margin-right:20%}.g-b--pull--m2of5,.g-b--pull--m4of10{margin-right:40%}.g-b--pull--m3of5,.g-b--pull--m6of10{margin-right:60%}.g-b--pull--m4of5,.g-b--pull--m8of10{margin-right:80%}.g-b--pull--m1of6,.g-b--pull--m2of12{margin-right:16.666%}.g-b--pull--m5of6,.g-b--pull--m10of12{margin-right:83.333%}.g-b--pull--m1of8{margin-right:12.5%}.g-b--pull--m3of8{margin-right:37.5%}.g-b--pull--m5of8{margin-right:62.5%}.g-b--pull--m7of8{margin-right:87.5%}.g-b--pull--m1of10{margin-right:10%}.g-b--pull--m3of10{margin-right:30%}.g-b--pull--m7of10{margin-right:70%}.g-b--pull--m9of10{margin-right:90%}.g-b--pull--m1of12{margin-right:8.333%}.g-b--pull--m5of12{margin-right:41.666%}.g-b--pull--m7of12{margin-right:58.333%}.g-b--pull--m11of12{margin-right:91.666%}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{margin-bottom:.89999rem;padding-top:.10001rem}.title-document,.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#zen{width:400px}#editor{font-size:1rem}}@media screen and (min-width:46.25em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--t1of1{width:100%}.g-b--t1of2,.g-b--t2of4,.g-b--t3of6,.g-b--t4of8,.g-b--t5of10,.g-b--t6of12{width:50%}.g-b--t1of3,.g-b--t2of6,.g-b--t4of12{width:33.333%}.g-b--t2of3,.g-b--t4of6,.g-b--t8of12{width:66.666%}.g-b--t1of4,.g-b--t2of8,.g-b--t3of12{width:25%}.g-b--t3of4,.g-b--t6of8,.g-b--t9of12{width:75%}.g-b--t1of5,.g-b--t2of10{width:20%}.g-b--t2of5,.g-b--t4of10{width:40%}.g-b--t3of5,.g-b--t6of10{width:60%}.g-b--t4of5,.g-b--t8of10{width:80%}.g-b--t1of6,.g-b--t2of12{width:16.666%}.g-b--t5of6,.g-b--t10of12{width:83.333%}.g-b--t1of8{width:12.5%}.g-b--t3of8{width:37.5%}.g-b--t5of8{width:62.5%}.g-b--t7of8{width:87.5%}.g-b--t1of10{width:10%}.g-b--t3of10{width:30%}.g-b--t7of10{width:70%}.g-b--t9of10{width:90%}.g-b--t1of12{width:8.333%}.g-b--t5of12{width:41.666%}.g-b--t7of12{width:58.333%}.g-b--t11of12{width:91.666%}.g-b--push--t1of1{margin-left:100%}.g-b--push--t1of2,.g-b--push--t2of4,.g-b--push--t3of6,.g-b--push--t4of8,.g-b--push--t5of10,.g-b--push--t6of12{margin-left:50%}.g-b--push--t1of3,.g-b--push--t2of6,.g-b--push--t4of12{margin-left:33.333%}.g-b--push--t2of3,.g-b--push--t4of6,.g-b--push--t8of12{margin-left:66.666%}.g-b--push--t1of4,.g-b--push--t2of8,.g-b--push--t3of12{margin-left:25%}.g-b--push--t3of4,.g-b--push--t6of8,.g-b--push--t9of12{margin-left:75%}.g-b--push--t1of5,.g-b--push--t2of10{margin-left:20%}.g-b--push--t2of5,.g-b--push--t4of10{margin-left:40%}.g-b--push--t3of5,.g-b--push--t6of10{margin-left:60%}.g-b--push--t4of5,.g-b--push--t8of10{margin-left:80%}.g-b--push--t1of6,.g-b--push--t2of12{margin-left:16.666%}.g-b--push--t5of6,.g-b--push--t10of12{margin-left:83.333%}.g-b--push--t1of8{margin-left:12.5%}.g-b--push--t3of8{margin-left:37.5%}.g-b--push--t5of8{margin-left:62.5%}.g-b--push--t7of8{margin-left:87.5%}.g-b--push--t1of10{margin-left:10%}.g-b--push--t3of10{margin-left:30%}.g-b--push--t7of10{margin-left:70%}.g-b--push--t9of10{margin-left:90%}.g-b--push--t1of12{margin-left:8.333%}.g-b--push--t5of12{margin-left:41.666%}.g-b--push--t7of12{margin-left:58.333%}.g-b--push--t11of12{margin-left:91.666%}.g-b--pull--t1of1{margin-right:100%}.g-b--pull--t1of2,.g-b--pull--t2of4,.g-b--pull--t3of6,.g-b--pull--t4of8,.g-b--pull--t5of10,.g-b--pull--t6of12{margin-right:50%}.g-b--pull--t1of3,.g-b--pull--t2of6,.g-b--pull--t4of12{margin-right:33.333%}.g-b--pull--t2of3,.g-b--pull--t4of6,.g-b--pull--t8of12{margin-right:66.666%}.g-b--pull--t1of4,.g-b--pull--t2of8,.g-b--pull--t3of12{margin-right:25%}.g-b--pull--t3of4,.g-b--pull--t6of8,.g-b--pull--t9of12{margin-right:75%}.g-b--pull--t1of5,.g-b--pull--t2of10{margin-right:20%}.g-b--pull--t2of5,.g-b--pull--t4of10{margin-right:40%}.g-b--pull--t3of5,.g-b--pull--t6of10{margin-right:60%}.g-b--pull--t4of5,.g-b--pull--t8of10{margin-right:80%}.g-b--pull--t1of6,.g-b--pull--t2of12{margin-right:16.666%}.g-b--pull--t5of6,.g-b--pull--t10of12{margin-right:83.333%}.g-b--pull--t1of8{margin-right:12.5%}.g-b--pull--t3of8{margin-right:37.5%}.g-b--pull--t5of8{margin-right:62.5%}.g-b--pull--t7of8{margin-right:87.5%}.g-b--pull--t1of10{margin-right:10%}.g-b--pull--t3of10{margin-right:30%}.g-b--pull--t7of10{margin-right:70%}.g-b--pull--t9of10{margin-right:90%}.g-b--pull--t1of12{margin-right:8.333%}.g-b--pull--t5of12{margin-right:41.666%}.g-b--pull--t7of12{margin-right:58.333%}.g-b--pull--t11of12{margin-right:91.666%}.splashscreen-dillinger{width:500px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem}.menu .menu-item--save-to,.menu .menu-item--import-from{display:block}.menu .menu-item--preview,.menu .menu-item--save-to.in-sidebar,.menu .menu-item--import-from.in-sidebar{display:none}.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog{font-size:1.25rem}.enter-zen-mode{display:block}.close-zen-mode{right:3rem;top:3rem}#zen{font-size:1.25rem;width:500px}.split-editor{border-right:1px solid #E8E8E8;float:left;height:calc(100vh - 172px);-webkit-overflow-scrolling:touch;padding-right:16px;width:50%}.show-preview .split-editor{display:block}.split-preview{display:block;float:right;height:calc(100vh - 172px);-webkit-overflow-scrolling:touch;position:relative;top:0;width:50%}#editor{font-size:1rem}}@media screen and (min-width:62.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.g{margin-left:-16px;margin-right:-16px}.g-b{padding-left:16px;padding-right:16px}.g-b--d1of1{width:100%}.g-b--d1of2,.g-b--d2of4,.g-b--d3of6,.g-b--d4of8,.g-b--d5of10,.g-b--d6of12{width:50%}.g-b--d1of3,.g-b--d2of6,.g-b--d4of12{width:33.333%}.g-b--d2of3,.g-b--d4of6,.g-b--d8of12{width:66.666%}.g-b--d1of4,.g-b--d2of8,.g-b--d3of12{width:25%}.g-b--d3of4,.g-b--d6of8,.g-b--d9of12{width:75%}.g-b--d1of5,.g-b--d2of10{width:20%}.g-b--d2of5,.g-b--d4of10{width:40%}.g-b--d3of5,.g-b--d6of10{width:60%}.g-b--d4of5,.g-b--d8of10{width:80%}.g-b--d1of6,.g-b--d2of12{width:16.666%}.g-b--d5of6,.g-b--d10of12{width:83.333%}.g-b--d1of8{width:12.5%}.g-b--d3of8{width:37.5%}.g-b--d5of8{width:62.5%}.g-b--d7of8{width:87.5%}.g-b--d1of10{width:10%}.g-b--d3of10{width:30%}.g-b--d7of10{width:70%}.g-b--d9of10{width:90%}.g-b--d1of12{width:8.333%}.g-b--d5of12{width:41.666%}.g-b--d7of12{width:58.333%}.g-b--d11of12{width:91.666%}.g-b--push--d1of1{margin-left:100%}.g-b--push--d1of2,.g-b--push--d2of4,.g-b--push--d3of6,.g-b--push--d4of8,.g-b--push--d5of10,.g-b--push--d6of12{margin-left:50%}.g-b--push--d1of3,.g-b--push--d2of6,.g-b--push--d4of12{margin-left:33.333%}.g-b--push--d2of3,.g-b--push--d4of6,.g-b--push--d8of12{margin-left:66.666%}.g-b--push--d1of4,.g-b--push--d2of8,.g-b--push--d3of12{margin-left:25%}.g-b--push--d3of4,.g-b--push--d6of8,.g-b--push--d9of12{margin-left:75%}.g-b--push--d1of5,.g-b--push--d2of10{margin-left:20%}.g-b--push--d2of5,.g-b--push--d4of10{margin-left:40%}.g-b--push--d3of5,.g-b--push--d6of10{margin-left:60%}.g-b--push--d4of5,.g-b--push--d8of10{margin-left:80%}.g-b--push--d1of6,.g-b--push--d2of12{margin-left:16.666%}.g-b--push--d5of6,.g-b--push--d10of12{margin-left:83.333%}.g-b--push--d1of8{margin-left:12.5%}.g-b--push--d3of8{margin-left:37.5%}.g-b--push--d5of8{margin-left:62.5%}.g-b--push--d7of8{margin-left:87.5%}.g-b--push--d1of10{margin-left:10%}.g-b--push--d3of10{margin-left:30%}.g-b--push--d7of10{margin-left:70%}.g-b--push--d9of10{margin-left:90%}.g-b--push--d1of12{margin-left:8.333%}.g-b--push--d5of12{margin-left:41.666%}.g-b--push--d7of12{margin-left:58.333%}.g-b--push--d11of12{margin-left:91.666%}.g-b--pull--d1of1{margin-right:100%}.g-b--pull--d1of2,.g-b--pull--d2of4,.g-b--pull--d3of6,.g-b--pull--d4of8,.g-b--pull--d5of10,.g-b--pull--d6of12{margin-right:50%}.g-b--pull--d1of3,.g-b--pull--d2of6,.g-b--pull--d4of12{margin-right:33.333%}.g-b--pull--d2of3,.g-b--pull--d4of6,.g-b--pull--d8of12{margin-right:66.666%}.g-b--pull--d1of4,.g-b--pull--d2of8,.g-b--pull--d3of12{margin-right:25%}.g-b--pull--d3of4,.g-b--pull--d6of8,.g-b--pull--d9of12{margin-right:75%}.g-b--pull--d1of5,.g-b--pull--d2of10{margin-right:20%}.g-b--pull--d2of5,.g-b--pull--d4of10{margin-right:40%}.g-b--pull--d3of5,.g-b--pull--d6of10{margin-right:60%}.g-b--pull--d4of5,.g-b--pull--d8of10{margin-right:80%}.g-b--pull--d1of6,.g-b--pull--d2of12{margin-right:16.666%}.g-b--pull--d5of6,.g-b--pull--d10of12{margin-right:83.333%}.g-b--pull--d1of8{margin-right:12.5%}.g-b--pull--d3of8{margin-right:37.5%}.g-b--pull--d5of8{margin-right:62.5%}.g-b--pull--d7of8{margin-right:87.5%}.g-b--pull--d1of10{margin-right:10%}.g-b--pull--d3of10{margin-right:30%}.g-b--pull--d7of10{margin-right:70%}.g-b--pull--d9of10{margin-right:90%}.g-b--pull--d1of12{margin-right:8.333%}.g-b--pull--d5of12{margin-right:41.666%}.g-b--pull--d7of12{margin-right:58.333%}.g-b--pull--d11of12{margin-right:91.666%}.splashscreen-dillinger{width:700px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{font-size:1.25rem;margin-bottom:.89999rem;padding-top:.10001rem}.menu .menu-item--export-as{display:block}.menu .menu-item--preview{display:none}.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#zen{width:700px}#editor{font-size:1rem}}@media screen and (min-width:87.5em){html{font-size:.875em}body{font-size:1rem}ul,ol{margin-bottom:.83999rem;padding-top:.16001rem}p{padding-top:.66001rem}p,pre{margin-bottom:1.33999rem}pre,blockquote p{font-size:1rem;padding-top:.66001rem}blockquote p{margin-bottom:.33999rem}h1{font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}.splashscreen-dillinger{width:800px}.splashscreen p{font-size:1.25rem;margin-bottom:1.43749rem;padding-top:.56251rem}.title{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.title-document{margin-bottom:.89999rem;padding-top:.10001rem}.title-document,.settings a{font-size:1.25rem}.words{font-size:.8rem;margin-bottom:.77999rem;padding-top:.22001rem}.modal--dillinger.about .modal-dialog,#zen{font-size:1.25rem}#editor{font-size:1rem}}@media (min-width:768px){.form-inline .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}.form-inline .input-group{display:inline-table;vertical-align:middle}.form-inline .input-group .input-group-addon,.form-inline .input-group .input-group-btn,.form-inline .input-group .form-control{width:auto}.form-inline .input-group>.form-control{width:100%}.form-inline .control-label{margin-bottom:0;vertical-align:middle}.form-inline .radio,.form-inline .checkbox{display:inline-block;margin-top:0;margin-bottom:0;vertical-align:middle}.form-inline .radio label,.form-inline .checkbox label{padding-left:0}.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{position:relative;margin-left:0}.form-inline .has-feedback .form-control-feedback{top:0}.form-horizontal .control-label{text-align:right;margin-bottom:0;padding-top:7px}.form-horizontal .form-group-lg .control-label{padding-top:14.3px}.form-horizontal .form-group-sm .control-label{padding-top:6px}.modal-dialog{width:600px;margin:30px auto}.modal-content{box-shadow:0 5px 15px rgba(0,0,0,.5)}.modal-sm{width:300px}}@media (min-width:992px){.modal-lg{width:900px}}@media screen and (max-width:1200px){.ad-container{max-width:30%}.ad-container a{font-size:.825rem;line-height:.875rem;padding:12px 12px 6px 24px;text-align:justify}}@media screen and (max-width:1100px){.ad-container{max-width:27%}.ad-container a{font-size:.8rem;line-height:.85rem;padding:12px 6px 6px 24px;text-align:justify}}@media screen and (max-width:1000px){.ad-container{max-width:24%}.ad-container a{font-size:.775rem;line-height:.8rem;padding:12px 6px 6px 24px;text-align:justify}}@media screen and (max-width:900px){.ad-container{max-width:30%}}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;overflow-x:auto;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd;-webkit-overflow-scrolling:touch}.table-responsive>.table{margin-bottom:0}.table-responsive>.table>thead>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}.table-responsive>.table-bordered{border:0}.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}}@media screen and (max-width:720px){.ad-container{max-width:50%}.ad-container a{font-size:.75rem;line-height:1rem;padding:12px 24px}}@media screen and (max-width:620px){.ad-container{max-width:40%}.ad-container a{font-size:.66rem;letter-spacing:1px;line-height:1rem;padding:6px 24px}}@media screen and (max-width:520px){.ad-container a{font-size:.4rem;line-height:.875rem;padding:6px 12px 6px 24px;text-align:justify}}@media screen and (max-width:460px){.ad-container{display:none}}@media screen and (max-width:46.1875em){.editor-header{display:none}.editor-header--first{display:block;width:100%}}</style></head><body id="preview">
+<h1><a id="DotNetBrowser_Programmerrsquos_Guide_0"></a>DotNetBrowser Programmer’s Guide</h1>
+<h2><a id="Introduction_2"></a>Introduction</h2>
+<p>DotNetBrowser is a .NET Library that allows embedding a <a href="http://www.chromium.org/">Chromium</a>-based component into .NET applications to display modern web pages built with HTML5, CSS3, JavaScript, etc. DotNetBrowser supports both <strong>WPF</strong> and <strong>WinForms</strong> .NET graphical subsystems and provides WPF/WinForms UI components, which can be embedded into .NET Desktop Application to display web pages.</p>
+<h4><a id="Chromium_6"></a>Chromium</h4>
+<p>All required Chromium binaries are deployed with the library. You don’t need to install Google Chrome to work with DotNetBrowser. DotNetBrowser uses Chromium build 51.0.2704.106.</p>
+<h4><a id="Rendering_10"></a>Rendering</h4>
+<p>Everything you see on the web page, when you load it, is rendered by the Chromium engine. DotNetBrowser just displays web page’s parts rendered by the Chromium engine. Chromium loads and renders web pages in separate native processes (Multi-Process Architecture). The web page looks exactly as in Google Chrome.</p>
+<h4><a id="MultiProcess_Architecture_14"></a>Multi-Process Architecture</h4>
+<p>DotNetBrowser inherits Chromium’s Multi-Process Architecture. Each web page is rendered in a separate native process (<code>DotNetBrowser.Chromium.exe</code>). JavaScript on the web page and plugins are executed in separate native processes as well. If an unexpected error happens in the web page’s plugin or DOM, your application will continue working. You can listen to events about unexpected termination of the Chromium process and restore Browser component if necessary.</p>
+<h4><a id="Memory_Usage_18"></a>Memory Usage</h4>
+<p>Since all Chromium functionality is running in separate native processes, Chromium engine doesn’t use the memory of your .NET application.</p>
+<h2><a id="Installation_and_Deployment_22"></a>Installation and Deployment</h2>
+<h3><a id="Requirements_24"></a>Requirements</h3>
+<p>DotNetBrowser runs on Windows, both 32- and 64-bit:</p>
+<p><strong>Microsoft Windows</strong></p>
+<ul>
+<li>Windows 10</li>
+<li>Windows 8 &amp; 8.1</li>
+<li>Windows 7</li>
+<li>Windows Server 2008</li>
+<li>Windows Server 2012</li>
+</ul>
+<p><strong>Microsoft Visual Studio</strong></p>
+<ul>
+<li>2013</li>
+<li>2015</li>
+</ul>
+<p><strong>.NET Framework</strong></p>
+<ul>
+<li>4.0 or higher</li>
+</ul>
+<h3><a id="Installation_45"></a>Installation</h3>
+<p>DotNetBrowser is distributed as a simple ZIP archive &lt;code&gt;dotnetbrowser-x.x.x.zip&lt;/code&gt;. The archive has the following structure:</p>
+<ul>
+<li>DotNetBrowser library (<code>/Library/DotNetBrowser.dll</code>)</li>
+<li>DotNetBrowser Chromium binaries for Windows (<code>/Library/DotNetBrowser.Chromium.dll</code>)</li>
+<li>DotNetBrowser API Specification (<code>/Library/Documentation/API/</code>)</li>
+<li>DotNetBrowser examples (<code>/Samples</code>)</li>
+<li>DotNetBrowser Demo application (<code>/Library/DotNetBrowser.WPF.Demo.exe</code>
+and <code>/Library/WindowsForms.Demo.exe</code>)</li>
+<li>DotNetBrowser Licence agreement (<code>Licence Agreement.txt</code>)</li>
+<li>Readme file (<code>Readme.txt</code>)</li>
+<li>Software and hardware requirements (<code>Requirements.txt</code>)</li>
+<li>Chromium WebKit licence (<code>GNU LESSER GENERAL PUBLIC LICENSE - Version 2.1.txt</code>
+and <code>GNU LIBRARY GENERAL PUBLIC LICENSE - Version 2.txt</code>)</li>
+</ul>
+<p>To include DotNetBrowser into your Microsoft Visual Studio Project, you need to download and extract the archive into some directory, and add reference to <code>DotNetBrowser.dll</code> and <code>DotNetBrowser.Chromium.dll</code> in your .NET Visual Studio 2013 Project.</p>
+<h3><a id="Licensing_63"></a>Licensing</h3>
+<p>To work with the DotNetBrowser library you need a licence file — <code>teamdev.licenses</code>. There are two types of licences: free 30-days evaluation and commercial licence.</p>
+<h4><a id="30days_Evaluation_Licence_67"></a>30-days Evaluation Licence</h4>
+<p>When you request a 30-day evaluation licence file, you receive an email message with the download link for <code>teamdev.licenses</code> file. To enable the evaluation licence you need to include the file into your MS VS2013 Project as <strong>Embedded Resource</strong>.</p>
+<h4><a id="Commercial_Licence_71"></a>Commercial Licence</h4>
+<p>When you purchase a commercial licence, you get an archive with two licence files inside:</p>
+<pre><code>Development/
+    teamdev.licenses
+Runtime/
+    teamdev.licenses
+</code></pre>
+<p>You need to include one of these licence files into your Visual Studio Project to enable the licence. The difference between Development and Runtime licences is the following:</p>
+<ul>
+<li>you need to use the Development licence for development purposes only. The number of licences should be equal to the number of developers who use DotNetBrowser in development. For example, if you have 10 developers involved into your project and only 4 of them work with DotNetBrowser, you should purchase 4 licences only.</li>
+<li>the Runtime licence should be used when you distribute your software with DotNetBrowser enclosed. You can deploy the Runtime licence with your application to unlimited number of end users.</li>
+</ul>
+<h3><a id="Deployment_87"></a>Deployment</h3>
+<p>Here’s a list of the necessary files that must be deployed to the end user’s environment:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Assembly</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DotNetBrowser.dll</code></td>
+<td style="text-align:center">DotNetBrowser DLL</td>
+</tr>
+<tr>
+<td><code>DotNetBrowser.Chromium.dll</code></td>
+<td style="text-align:center">Chromium binaries</td>
+</tr>
+</tbody>
+</table>
+<p>The way to deploy these files is up to you.</p>
+<h2><a id="Getting_Started_97"></a>Getting Started</h2>
+<p>In general to start working with DotNetBrowser library in your .NET Application you need to:</p>
+<ol>
+<li>Include <code>DotNetBrowser.dll</code> into your Visual Studio Project.</li>
+<li>Include <code>teamdev.licenses</code> into your Visual Studio Project as <strong>Embedded Resource</strong>.</li>
+</ol>
+<h3><a id="Installing_Evaluation_Licence_103"></a>Installing Evaluation Licence</h3>
+<h3><a id="Browser_105"></a>Browser</h3>
+<p>Using <code>DotNetBrowser.Browser</code> instance you can work with Chromium engine. This interface provides methods for loading web page by URL, loading HTML content, getting HTML content of the loaded web page, execute JavaScript, navigating through navigation history, accessing to Browser loading, status events, etc.</p>
+<p>DotNetBrowser library defines all classes and interfaces in the following namespaces:</p>
+<pre><code>DotNetBrowser
+DotNetBrowser.Events
+DotNetBrowser.WPF
+DotNetBrowser.WinForms
+</code></pre>
+<p>When you don’t need to use <code>Browser</code> instance you should dispose it using the <code>Browser.Dispose()</code> method. This method releases all allocated by instance resources and terminates all corresponding native processes.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">if</span> (!browser.Disposed)
+{
+    browser.Dispose();
+}
+</code></pre>
+<p><code>Browser</code> instance might be disposed from JavaScript code via <code>window.close()</code> JavaScript function. To get notifications about instance disposal use <code>DisposeEvent</code>:</p>
+<pre><code class="language-csharp">browser.DisposeEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, DisposeEventArgs e)
+{
+};
+</code></pre>
+<h3><a id="BrowserFactory_134"></a>BrowserFactory</h3>
+<p>To create <code>Browser</code> instance use the <code>BrowserFactory.Create()</code> method.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+
+Browser browser = BrowserFactory.Create();
+</code></pre>
+<h3><a id="BrowserContext_144"></a>BrowserContext</h3>
+<p>Each <code>Browser</code> instance must be created using <code>BrowserFactory</code>. <code>BrowserFactory</code> initializes the context needed for a browsing session and provides path to the directory where Chromium stores cookies, cache data files, etc.</p>
+<p>The following code creates a new Browser instance initialized with default context:</p>
+<pre><code class="language-csharp">Browser browser = BrowserFactory.Create();
+</code></pre>
+<p>The code above equals to:</p>
+<pre><code class="language-csharp">
+Browser browser = BrowserFactory.Create(BrowserContext.DefaultContext);
+</code></pre>
+<p>The <code>BrowserContext.DefaultContext</code> property is a default <code>BrowserContext</code> that is configured to store Chromium data files such as cookies, cache, etc. in user’s temp directory. You can get path to the directory where data files are stored using the <code>BrowserPreferences.GetDefaultDataDir()</code> method.</p>
+<p>Two <code>Browser</code> instances with same <code>BrowserContext</code> will use same user data directory. As result they share cookies and cache files. For example:</p>
+<pre><code class="language-csharp">
+BrowserContextParams <span class="hljs-keyword">params</span>= <span class="hljs-keyword">new</span> BrowserContextParams(<span class="hljs-string">"C:\\my-data1"</span>);
+BrowserContext context = <span class="hljs-keyword">new</span> BrowserContext(<span class="hljs-keyword">params</span>);
+
+Browser browser1 = BrowserFactory.Create(context);
+Browser browser2 = BrowserFactory.Create(context);
+</code></pre>
+<p>To create independent <code>Browser</code> instances that don’t share cookies and cache data, you must initialize each Browser instance with a different BrowserContext configured to use different data directory. For example:</p>
+<pre><code class="language-csharp">
+BrowserContextParams params1= <span class="hljs-keyword">new</span> BrowserContextParams(<span class="hljs-string">"C:\\my-data1"</span>);
+BrowserContext context1 = <span class="hljs-keyword">new</span> BrowserContext(<span class="hljs-keyword">params</span>);
+Browser browser1 = BrowserFactory.Create(context1);
+BrowserContextParams params2= <span class="hljs-keyword">new</span> BrowserContextParams(<span class="hljs-string">"C:\\my-data2"</span>);
+BrowserContext context2 = <span class="hljs-keyword">new</span> BrowserContext(params2);
+Browser browser2 = BrowserFactory.Create(context2);
+</code></pre>
+<p>To get <code>BrowserContext</code>of the <code>Browser</code> instance you can use the <code>browser.Context</code> property.</p>
+<pre><code> Make sure that you don't use several BrowserContext instances configured to use same data directory.
+ In this case Chromium engine will read/write same data directory from different Browser instances which might cause unexpected behavior or errors.
+</code></pre>
+<h3><a id="BrowserView_196"></a>BrowserView</h3>
+<p><code>BrowserView</code> represents an interface for UI components that can be embedded into .NET Application GUI to display HTML content. DotNetBrowser provides two implementations of the <code>BrowserView</code>: <code>WPFBrowserView</code> and <code>WinFormsBrowserView</code>.</p>
+<h4><a id="Disposing_BrowserView_200"></a>Disposing BrowserView</h4>
+<p>For the BrowserView, you need to dispose the view first and its browser second:</p>
+<pre><code class="language-csharp">browserView.Dispose();
+browserView.Browser.Dispose();
+</code></pre>
+<p>The usual place to dispose BrowserView is <code>FormClosing</code> event for WinForms and <code>Window.Closing</code> event for WPF.</p>
+<p>The BrowserView created via its default constructor disposes itself automatically.</p>
+<h4><a id="BrowserView__WinForms_212"></a>BrowserView - WinForms</h4>
+<p>The following sample code demonstrates how to create WinForms Browser instance, embed it into a Window and load <a href="http://www.google.com">http://www.google.com</a> URL. More details about configuring the sample can be found in the <a href="http://dotnetbrowser-support.teamdev.com/documentation/quick-start-guide---winforms">Quick Start Guide.</a></p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System.Windows.Forms;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WinForms;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">WinForms.DotNetBrowser</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Form1</span> : <span class="hljs-title">Form</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Form1</span>(<span class="hljs-params"></span>)
+        </span>{
+            InitializeComponent();
+
+            BrowserView browserView = <span class="hljs-keyword">new</span> WinFormsBrowserView();
+            Controls.Add((Control) browserView);
+            browserView.Browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+        }
+    }
+}
+</code></pre>
+<h4><a id="BrowserView__WPF_237"></a>BrowserView - WPF</h4>
+<p>The following sample code demonstrates how to create WPF Browser instance, embed it into a Window and load <a href="http://www.google.com">http://www.google.com</a> URL. More details about configuring the sample can be found in the <a href="http://dotnetbrowser-support.teamdev.com/documentation/quick-start-guide---wpf">Quick Start Guide.</a></p>
+<h4><a id="MainWindowxaml_241"></a>MainWindow.xaml</h4>
+<pre><code class="language-csharp">&lt;Window x:Class=<span class="hljs-string">"WPF.DotNetBrowser.MainWindow"</span>
+        xmlns=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        xmlns:x=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        Title=<span class="hljs-string">"MainWindow"</span> Height=<span class="hljs-string">"350"</span> Width=<span class="hljs-string">"525"</span>&gt;
+    &lt;Grid Name=<span class="hljs-string">"mainLayout"</span>&gt;
+
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<h4><a id="MainWindowxamlcs_254"></a>MainWindow.xaml.cs</h4>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">WPF.DotNetBrowser</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span> : <span class="hljs-title">Window</span>
+    {
+        BrowserView webView;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MainWindow</span>(<span class="hljs-params"></span>)
+        </span>{
+            InitializeComponent();
+
+            webView = <span class="hljs-keyword">new</span> WPFBrowserView(BrowserFactory.Create());
+            mainLayout.Children.Add((UIElement)webView.GetComponent());
+            webView.Browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+        }
+    }
+}
+</code></pre>
+<h3><a id="Lightweight_and_Heavyweight_rendering_278"></a>Lightweight and Heavyweight rendering</h3>
+<p>DotNetBrowser supports two rendering modes: lightweight and heavyweight. By default, heavyweight rendering mode is enabled, so when you create <code>Browser</code> instance using the following code, it creates a new <code>Browser</code> instance configured to use heavyweight rendering mode:</p>
+<pre><code class="language-csharp">Browser browser = BrowserFactory.Create();
+</code></pre>
+<p>To create a new Browser instance with specified rendering mode use the following approach:</p>
+<pre><code class="language-csharp"><span class="hljs-comment">// Creates Browser instance with enabled lighweight rendering mode</span>
+Browser browser = BrowserFactory.Create(BrowserType.LIGHTWEIGHT);
+
+<span class="hljs-comment">// Creates Browser instance with enabled heavyweight rendering mode</span>
+Browser browser = BrowserFactory.Create(BrowserType.HEAVYWEIGHT);
+</code></pre>
+<p>The differences between lightweight and heavyweight rendering modes and recommendations about what rendering mode you should use in your application you can find below:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lightweight (off-screen)</th>
+<th>Heavyweight (GPU-accelerated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In the lightweight rendering mode Chromium engine renders web page off-screen using CPU. An image of the web page is saved in shared memory. DotNetBrowser reads the image from the shared memory and displays it using standard WPF or WinForms API.</td>
+<td>In the heavyweight rendering mode, which is the default mode in DotNetBrowser, we embed a native Win32 window into your .NET application frame. Then, the Chromium engine is configured to render content into this native window using GPU.</td>
+</tr>
+<tr>
+<td><code>Browser browser = BrowserFactory.Create(BrowserType.LIGHTWEIGHT);</code></td>
+<td><code>Browser browser = BrowserFactory.Create(BrowserType.HEAVYWEIGHT);</code></td>
+</tr>
+<tr>
+<td><strong>When should be used</strong></td>
+<td><strong>When should be used</strong></td>
+</tr>
+<tr>
+<td>This rendering mode works great if you need a true lightweight WPF/WinForms control that allows displaying modern HTML5/JavaScript/CSS web pages. You can make this lightweight control transparent, display other controls on top of it, render something over web page, etc.</td>
+<td>Heavyweight (GPU-accelerated) rendering mode works much faster compared to lightweight rendering mode. In this mode rendering performance is the same as in Google Chrome. You can display fullscreen video or HTML5 dynamic animation with 60fps. So, if rendering performance is very important for your application, it’ll be better to use heavyweight rendering mode.</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="Loading_URL_305"></a>Loading URL</h2>
+<p>To load a web page by its URL use the <code>Browser.LoadURL()</code> method.</p>
+<p>The following code demonstrates how to load <a href="http://www.google.com">http://www.google.com</a> web page:</p>
+<pre><code class="language-csharp">browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+</code></pre>
+<p>The web page will be loaded asynchronously (it doesn’t block current thread execution), so there’s no guarantee that Google web page will be loaded completely when the method returns. To find out when web page is loaded completely use Load Events.</p>
+<p>Since 1.8.1 it is possible to determine browser is currently loading something. The <code>Browser.Loading</code> property will return true in this case.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">MyNamespace</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-comment">// Create Browser instance.</span>
+            Browser browser = BrowserFactory.Create();
+
+            <span class="hljs-comment">// Load "http://www.google.com" URL</span>
+            browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+
+            <span class="hljs-comment">// Dispose Browser instance.</span>
+            browser.Dispose();
+        }
+    }
+}
+</code></pre>
+<h3><a id="Loading__Waiting_342"></a>Loading &amp; Waiting</h3>
+<p>In some cases (e.g. automation testing) you might need to block current thread execution and wait until the web page is loaded completely.</p>
+<p>The following sample code demonstrates how to load <a href="http://www.google.com">http://www.google.com</a> web page and wait until it’s loaded completely:</p>
+<pre><code class="language-csharp"> ManualResetEvent waitEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+                browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+                {
+                    <span class="hljs-comment">// Wait until main document of the web page is loaded completely.</span>
+                    <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                    {
+                        waitEvent.Set();
+                    }
+                };
+                browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+                waitEvent.WaitOne();
+</code></pre>
+<h3><a id="Configuring_Load_Handler_362"></a>Configuring Load Handler</h3>
+<p><code>LoadHandler</code> allows handling any load activity including filtering all URLs loaded in Browser component. Using <code>LoadHandler</code> you can cancel any load event or suppress problematic SSL certificates.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">MyNamespace</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-comment">// Create Browser instance.</span>
+            Browser browser = BrowserFactory.Create();
+
+            <span class="hljs-comment">// Register custom LoadHandler implementation.</span>
+            browser.LoadHandler = <span class="hljs-keyword">new</span> MyLoadHandler();
+
+            <span class="hljs-comment">// Load "http://www.google.com" URL.</span>
+            browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+
+            <span class="hljs-comment">// Dispose Browser instance.</span>
+            browser.Dispose();
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyLoadHandler</span> : <span class="hljs-title">DefaultLoadHandler</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">OnLoad</span>(<span class="hljs-params">LoadParams loadParams</span>)
+        </span>{
+            <span class="hljs-comment">// Suppress loading everything with URL that starts with "http://www.google.com".</span>
+            <span class="hljs-keyword">if</span> (loadParams.Url.StartsWith(<span class="hljs-string">"http://www.google.com"</span>))
+            {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+    }
+}
+</code></pre>
+<h4><a id="EnablingDisabling_Backspace_Navigation_408"></a>Enabling/Disabling Backspace Navigation</h4>
+<p>By default navigation on <em>Backspace</em> and <em>Shift+Backspace</em> is enabled. In order to disable navigation when user presses <em>Backspace</em> or <em>Shift+Backspace</em> use the following approach:</p>
+<pre><code class="language-csharp">&lt;Window x:Class=<span class="hljs-string">"WPF.BackspaceNavigation.MainWindow"</span>
+        xmlns=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        xmlns:x=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        Title=<span class="hljs-string">"MainWindow"</span> Height=<span class="hljs-string">"350"</span> Width=<span class="hljs-string">"525"</span> Closing=<span class="hljs-string">"Window_Closing"</span>&gt;
+    &lt;Grid Name=<span class="hljs-string">"mainLayout"</span>&gt;
+        
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.IO;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+<span class="hljs-keyword">using</span> System.Windows;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">WPF.BackspaceNavigation</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span> : <span class="hljs-title">Window</span>
+    {
+        Browser browser;
+        WPFBrowserView browserView;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MainWindow</span>(<span class="hljs-params"></span>)
+        </span>{
+            InitializeComponent();
+
+            browser = BrowserFactory.Create();
+            browserView = <span class="hljs-keyword">new</span> WPFBrowserView(browser);
+            mainLayout.Children.Add(browserView);
+
+            browser.LoadHandler = <span class="hljs-keyword">new</span> SampleLoadHandler();
+
+            browserView.Browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Window_Closing</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, System.ComponentModel.CancelEventArgs e</span>)
+        </span>{
+            <span class="hljs-comment">// Dispose BrowserView when close app window.</span>
+            browserView.Dispose();
+            browser.Dispose();
+        }
+    }
+
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title">SampleLoadHandler</span> : <span class="hljs-title">LoadHandler</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">CanNavigateOnBackspace</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+    }
+}
+</code></pre>
+<h2><a id="Loading_HTML_468"></a>Loading HTML</h2>
+<p>To load HTML content from a string use <code>Browser.LoadHTML()</code> method. For example:</p>
+<pre><code class="language-csharp">browser.LoadHTML(<span class="hljs-string">"&lt;html&gt;&lt;body&gt;&lt;h1&gt;Load HTML Sample&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"</span>);
+</code></pre>
+<p>The output will look like this:</p>
+<p><img src="http://dotnetbrowser-support.teamdev.com/_/rsrc/1472854607069/documentation/loading-html/screenshot.png" alt="Example"></p>
+<p><strong>Example</strong></p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">MyNamespace</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-comment">// Create Browser instance.</span>
+            Browser browser = BrowserFactory.Create();
+
+            <span class="hljs-comment">// Load HTML content from string .</span>
+            browser.LoadHTML(<span class="hljs-string">"&lt;html&gt;&lt;body&gt;&lt;h1&gt;Load HTML Sample&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"</span>);
+            
+            <span class="hljs-comment">// Dispose Browser instance.</span>
+            browser.Dispose();
+        }
+    }
+}
+</code></pre>
+<h2><a id="Getting_HTML_505"></a>Getting HTML</h2>
+<p>To get a string that represents HTML of the loaded web page use the <code>Browser.GetHTML()</code> method. You must call this method only when web page is loaded completely. Otherwise you might receive incomplete HTML or empty string. The following code demonstrates how to wait until web page is loaded completely and get HTML of the loaded web page:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">MyNamespace</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-comment">// Create Browser instance.</span>
+            Browser browser = BrowserFactory.Create();
+
+            <span class="hljs-comment">// Register frame loading event listener.</span>
+            browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+            {
+                <span class="hljs-comment">// Wait until main document of the web page is loaded completely.</span>
+                <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                {
+                    <span class="hljs-comment">// Get HTML of the loaded web page and write it to Console.</span>
+                    Console.Out.WriteLine(e.Browser.GetHTML());
+                }
+            };
+
+            <span class="hljs-comment">// Load teamdev.com to get its HTML content.</span>
+            browser.LoadURL(<span class="hljs-string">"http://www.teamdev.com"</span>);
+        }
+    }
+}
+</code></pre>
+<h2><a id="Events_541"></a>Events</h2>
+<h3><a id="Loading_Events_543"></a>Loading Events</h3>
+<p>The <code>Browser</code> interface provides functionality that allows getting load events. You can attach delegates to get notifications about web page loading progress, document availability, loading failure events, etc. You can receive the following load events:</p>
+<ul>
+<li><code>StartLoadingFrameEvent</code> - An event that indicates that frame loading process has been started.</li>
+<li><code>FinishLoadingFrameEvent</code> - An event that indicates that frame loading process has been finished.</li>
+<li><code>ProvisionalLoadingFrameEvent</code> - An event that indicates that provisional load for a specified frame was successfully committed.</li>
+<li><code>FailLoadingFrameEvent</code> - An event that indicates that frame loading process has failed.</li>
+<li><code>DocumentLoadedInFrameEvent</code> - An event that indicates that a frame with a document is loaded.</li>
+<li><code>DocumentLoadedInMainFrameEvent</code> - An event that indicates that main frame with a document is loaded.</li>
+</ul>
+<p>The following code demonstrates how to receive and handle several load events:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">MyNamespace</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            ManualResetEvent waitEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+            <span class="hljs-comment">// Create Browser instance.</span>
+            Browser browser = BrowserFactory.Create();
+            <span class="hljs-comment">// Register an event that will be fired when web page's frame has been completely loaded.</span>
+            browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+            {
+                Console.Out.WriteLine(<span class="hljs-string">"FinishLoadingFrame: URL = "</span> + e.ValidatedURL + <span class="hljs-string">", IsMainFrame = "</span> + e.IsMainFrame);
+                <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                {
+                    waitEvent.Set();
+                }
+            };
+            <span class="hljs-comment">// Register an event that will be fired when web page's frame has been started loading.</span>
+            browser.StartLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, StartLoadingArgs e)
+            {
+                Console.Out.WriteLine(<span class="hljs-string">"StartLoadingFrame: URL = "</span> + e.ValidatedURL + <span class="hljs-string">", IsMainFrame = "</span> + e.IsMainFrame);
+            };
+            <span class="hljs-comment">// Register an event that will be fired when document of main frame has been completely loaded.</span>
+            browser.DocumentLoadedInMainFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, LoadEventArgs e)
+            {
+                Console.Out.WriteLine(<span class="hljs-string">"DocumentLoadedInMainFrame"</span>);
+            };
+            <span class="hljs-comment">// Load google.com to get loading events.</span>
+            browser.LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+            <span class="hljs-comment">//Wait until the page is loaded completely.</span>
+            waitEvent.WaitOne();
+            <span class="hljs-comment">// Dispose Browser instance.</span>
+            browser.Dispose();
+        }
+    }
+}
+</code></pre>
+<h3><a id="Title_Events_599"></a>Title Events</h3>
+<p><code>TitleChangedEvent</code> indicates that the title of a document in the main frame has been changed.</p>
+<p>To get notifications when a document’s title has been changed use the <code>TitleChangeEvent</code> listener as shown in the following sample code:</p>
+<pre><code class="language-csharp">browser.TitleChangedEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, TitleEventArgs e) 
+{ 
+    <span class="hljs-keyword">string</span> mainDocumentTitle = e.Title; 
+};
+</code></pre>
+<h3><a id="Status_Events_612"></a>Status Events</h3>
+<p>When the user moves the cursor over a link, the Chromium engine displays its URL in the status bar. JavaScript code can change the text in the status bar programmatically via the window.status property as well. The DotNetBrowser API provides functionality that allows you to get notifications about the status bar text changes.</p>
+<p><code>StatusChangedEvent</code> indicates that the status bar text has been changed.</p>
+<p>The following sample code demonstrates how to use this functionality:</p>
+<pre><code class="language-csharp">browser.StatusChangedEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, StatusEventArgs e)
+{
+    <span class="hljs-keyword">string</span> statusText = e.Text;
+};
+</code></pre>
+<h2><a id="DOM_627"></a>DOM</h2>
+<h3><a id="Document_629"></a>Document</h3>
+<p>Each web page loaded in the browser has its own document object. To access document object of the loaded web page use the <code>Browser.GetDocument()</code> method. This method returns <code>DOMDocument</code> instance that you can use to access document’s properties and its child nodes. For example:</p>
+<pre><code class="language-csharp">DOMDocument document = browser.GetDocument();
+</code></pre>
+<p>If a web page contains frames (see <code>IFRAME</code> or <code>FRAME</code>), then each frame has its own document object. To access document object of a specified frame use the <code>Browser.GetDocument(long frameId)</code> method. The <code>frameId</code> can be obtained from the <code>Browser.GetFramesIds()</code> method. For example:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">long</span> frameId <span class="hljs-keyword">in</span> browser.GetFramesIds()) {
+    DOMDocument frameDocument = browser.GetDocument(frameId);
+}
+</code></pre>
+<p>Having <code>DOMDocument</code> instance you can work with the document object and its DOM structure.</p>
+<blockquote>
+<p>If web page isn’t completely loaded or it doesn’t have document, then the <code>Browser.GetDocument()</code> method returns <code>null</code>. So, before you invoke this method, make sure that web page is loaded completely.</p>
+</blockquote>
+<h3><a id="Finding_Elements_649"></a>Finding Elements</h3>
+<p>DotNetBrowser DOM API provides functionality that can be used for finding HTML elements on the loaded web page by different conditions. The following sample code demonstrates how to find all HTML elements by the specified tag name:</p>
+<pre><code class="language-csharp">List&lt;DOMNode&gt; divs = document.GetElementsByTagName(<span class="hljs-string">"div"</span>);
+</code></pre>
+<p>If you need to find only first HTML element in the document use the following approach:</p>
+<pre><code class="language-csharp">DOMElement div = document.GetElementById(<span class="hljs-string">"myId"</span>);
+</code></pre>
+<p>In general you can search for HTML elements using different conditions:</p>
+<pre><code class="language-csharp">DOMElement element = document.GetElementById(<span class="hljs-string">"myId"</span>);
+List&lt;DOMNode&gt; elements = document.GetElementByTagName(<span class="hljs-string">"div"</span>);
+List&lt;DOMNode&gt;elements = document.GetElementByClassName(<span class="hljs-string">"myClass"</span>);
+List&lt;DOMNode&gt; elements = document.GetElementByName(<span class="hljs-string">"myName"</span>);
+DOMNode root = document.QuerySelector(<span class="hljs-string">"#root"</span>);
+</code></pre>
+<h3><a id="Element_Attributes_673"></a>Element Attributes</h3>
+<p>The following sample code demonstrates how to access and list attributes of the particular DOM element.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.DOM;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> System.Threading.Tasks;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">DOMGetAttributesSample</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            Browser browser = BrowserFactory.Create();
+            browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+            {
+                <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                {
+                    DOMDocument document = e.Browser.GetDocument();
+                    DOMElement link = document.GetElementById(<span class="hljs-string">"link"</span>);
+                    Dictionary&lt;String, String&gt; attributes = link.Attributes;
+                    <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> attribute <span class="hljs-keyword">in</span> attributes)
+                    {
+                        Console.Out.WriteLine(attribute.Key + <span class="hljs-string">" = "</span> + attribute.Value);
+                    }
+                }
+            };
+            browser.LoadHTML(<span class="hljs-string">"&lt;html&gt;&lt;body&gt;&lt;a href='#' id='link' title='link title'&gt;&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"</span>);
+        }
+    }
+}
+</code></pre>
+<h3><a id="Working_with_the_Form_fields_713"></a>Working with the Form fields</h3>
+<p>The following sample code demonstrates how to fill the fields of the particular form automatically when the page is loaded completely.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.DOM;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> System.Threading;
+<span class="hljs-keyword">using</span> System.Threading.Tasks;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">DOMSetFormFieldsValuesSample</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-keyword">string</span> loginValue = <span class="hljs-string">"Login"</span>;
+            <span class="hljs-keyword">string</span> passwordValue = <span class="hljs-string">"Password"</span>;
+            <span class="hljs-keyword">using</span> (Browser browser = BrowserFactory.Create())
+            {
+                ManualResetEvent waitEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+                browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+                {
+                    <span class="hljs-comment">// Wait until main document of the web page is loaded completely.</span>
+                    <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                    {
+                        DOMDocument document = e.Browser.GetDocument();
+                        List&lt;DOMNode&gt; forms = document.GetElementsByTagName(<span class="hljs-string">"form"</span>);
+                        <span class="hljs-keyword">foreach</span> (DOMNode formNode <span class="hljs-keyword">in</span> forms)
+                        {
+                            <span class="hljs-keyword">if</span> (formNode.NodeType == DOMNodeType.ElementNode)
+                            {
+                                DOMElement form = (DOMElement)formNode;
+                                <span class="hljs-keyword">if</span>(form.GetAttribute(<span class="hljs-string">"name"</span>).Equals(<span class="hljs-string">"Form"</span>)){
+                                    List&amp;lt;DOMNode&amp;gt; logins = form.GetElementsByName(<span class="hljs-string">"login"</span>);
+                                    <span class="hljs-keyword">foreach</span> (DOMNode loginNode <span class="hljs-keyword">in</span> logins) 
+                                    {
+                                        DOMElement login = (DOMElement)loginNode;
+                                        login.SetAttribute(<span class="hljs-string">"value"</span>, loginValue);
+                                        Console.Out.WriteLine(<span class="hljs-string">"Login = "</span> +
+                                            login.GetAttribute(<span class="hljs-string">"value"</span>));
+                                    }
+                                    List&amp;lt;DOMNode&amp;gt;  passws = form.GetElementsByName(<span class="hljs-string">"passw"</span>);
+                                    <span class="hljs-keyword">foreach</span> (DOMNode passwNode <span class="hljs-keyword">in</span> passws)
+                                    {
+                                        DOMElement passw = (DOMElement)passwNode;
+                                        passw.SetAttribute(<span class="hljs-string">"value"</span>, passwordValue);
+                                        Console.Out.WriteLine(<span class="hljs-string">"Password = "</span> +
+                                            passw.GetAttribute(<span class="hljs-string">"value"</span>));
+                                    }
+                                }
+                            }
+                        }
+                        waitEvent.Set();
+                    }
+                };
+                browser.LoadHTML(
+                    <span class="hljs-string">"&lt;html&gt;"</span>+
+                    <span class="hljs-string">" &lt;body&gt;"</span>+
+                    <span class="hljs-string">"   &lt;form name='Form'&gt;"</span> +
+                    <span class="hljs-string">"       Login:&lt;br&gt;"</span> +
+                    <span class="hljs-string">"       &lt;input type='text' name='login'&gt;"</span> +
+                    <span class="hljs-string">"       &lt;br&gt;"</span> +
+                    <span class="hljs-string">"       Password:&lt;br&gt;"</span> +
+                    <span class="hljs-string">"       &lt;input type='password' name='passw'&gt;"</span> +
+                    <span class="hljs-string">"       &lt;br&gt;&lt;br&gt;"</span> +
+                    <span class="hljs-string">"       &lt;input type='submit' value='Submit'&gt;"</span> +
+                    <span class="hljs-string">"   &lt;/form&gt;"</span> +
+                    <span class="hljs-string">" &lt;/body&gt;"</span> +
+                    <span class="hljs-string">"&lt;/html&gt;"</span>);
+                waitEvent.WaitOne();
+            }
+        }
+    }
+}
+</code></pre>
+<h2><a id="Executing_JavaScript_795"></a>Executing JavaScript</h2>
+<p>Ability to execute JavaScript code on the loaded web page is one of the main features of DotNetBrowser. To execute JavaScript code, first of all, you need to make sure that web page is loaded completely.</p>
+<p>If the web page is loaded completely you can execute JavaScript code using one of the following approaches:</p>
+<h4><a id="Executing_JavaScript_without_returning_a_value_801"></a>Executing JavaScript without returning a value</h4>
+<p>The <code>Browser.ExecuteJavaScript(string javaScript)</code> method executes the JavaScript code asynchronously without blocking the current thread execution. If you are not interested in receiving the result of JavaScript code, you can use this method because its return parameter is void.</p>
+<pre><code class="language-csharp"><span class="hljs-comment">// Executes the passed JavaScript code asynchronously</span>
+browser.ExecuteJavaScript(<span class="hljs-string">"document.write('&lt;html&gt;&lt;title&gt;My Title&lt;/title&gt;&lt;body&gt;Hello from JxBrowser!&lt;/body&gt;&lt;/html&gt;');"</span>);
+</code></pre>
+<h4><a id="Executing_JavaScript_and_returning_the_result_810"></a>Executing JavaScript and returning the result</h4>
+<p>The <code>Browser.ExecuteJavaScriptAndReturnValue(string javaScript)</code> method executes the code described by <code>javaScript</code> parameter and returns the result of JavaScript code execution as <code>JSValue</code>. This method blocks the current thread execution until the passed JavaScript code stops its execution and returns the result of execution.</p>
+<p>The <code>JSValue</code> provides access to the result of JavaScript code execution. Using the methods of <code>JSValue</code> you can determine whether the result value is an object, number, string or boolean value. For example, the following code demonstrates how to get a document title string value using the <code>Browser.ExecuteJavaScriptAndReturnValue(string javaScript)</code> method:</p>
+<pre><code class="language-csharp">JSValue documentTitle = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"document.title"</span>);
+<span class="hljs-comment">// Make sure that result value is a string and read its value</span>
+<span class="hljs-keyword">if</span> (documentTitle.IsString()) {
+    Console.WriteLine(<span class="hljs-string">"Document Title = "</span> + documentTitle.GetString());
+}
+</code></pre>
+<p>In this sample we check that the return <code>JSValue</code> is a string value, using the <code>JSValue.IsString()</code> method; and access the string value, using the <code>JSValue.GetString()</code> method.</p>
+<pre><code>Please avoid using the Browser.ExecuteJavaScriptAndReturnValue(String javaScript) method in the UI thread,
+because the passed JavaScript code can cause JavaScript Alert dialog to be shown.
+All the dialogs are displayed in the UI thread by default. As a result, it can cause a deadlock.
+</code></pre>
+<h4><a id="Accessing_JavaScript_objects_832"></a>Accessing JavaScript objects</h4>
+<p>You can access JavaScript objects on the loaded web page using the <code>Browser.ExecuteJavaScriptAndReturnValue(String javaScript)</code> method. If return value represents JavaScript object, then JSValue will contain JSObject instance that represents .NET wrapper for JavaScript object. JSObject class provides functionality that allows working with JavaScript object properties and calling its functions.</p>
+<h4><a id="Getting_properties_836"></a>Getting properties</h4>
+<p>To access JavaScript object property use the <code>JSObject.GetProperty(String name)</code> method. The following code demonstrates how to get value of the <code>document.title</code> property:</p>
+<pre><code class="language-csharp">JSValue document = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"document"</span>);
+JSValue titleValue = document.AsObject().GetProperty(<span class="hljs-string">"title"</span>);
+String title = titleValue.GetString();
+</code></pre>
+<h4><a id="Setting_properties_846"></a>Setting properties</h4>
+<p>To modify JavaScript object property with specified value use the <code>JSObject.SetProperty(String name, object value)</code> method. The following code demonstrates how to modify document.title property with “My title” value:</p>
+<pre><code class="language-csharp">JSValue document = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"document"</span>);
+document.AsObject().SetProperty(<span class="hljs-string">"title"</span>, <span class="hljs-string">"My title"</span>);
+</code></pre>
+<h4><a id="Working_with_functions_855"></a>Working with functions</h4>
+<p>JavaScript object property can represent a function (JSFunction). You can invoke JavaScript object function using the following approach:</p>
+<pre><code class="language-csharp">JSValue document = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"document"</span>);
+JSValue write = document.AsObject().GetProperty(<span class="hljs-string">"write"</span>);
+write.AsFunction().Invoke(document.AsObject(), <span class="hljs-string">"&lt;html&gt;&lt;body&gt;Hello&lt;/body&gt;&lt;/html&gt;"</span>);
+</code></pre>
+<h4><a id="Working_with_arrays_865"></a>Working with arrays</h4>
+<p>JSValue can represent an Array (JSArray). You can access elements of the array using the following approach:</p>
+<pre><code class="language-csharp">JSValue array = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"['John', 'Doe', 46];"</span>);
+JSValue john = array.AsArray().<span class="hljs-keyword">get</span>(<span class="hljs-number">0</span>);
+JSValue doe = array.AsArray().<span class="hljs-keyword">get</span>(<span class="hljs-number">1</span>);
+</code></pre>
+<h4><a id="NET_to_JavaScript_types_conversion_875"></a>.NET to JavaScript types conversion</h4>
+<p>JavaScript and .NET work with different primitive types. DotNetBrowser implements automatic types conversion from .NET to JavaScript types. Here’s how .NET objects will be converted to their JavaScript equivalents by DotNetBrowser:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th style="text-align:left">.NET</th>
+<th style="text-align:left">JavaScript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">double, float, long, int, short, System.Double, System.Float System.Int64, System.Int32, System.Int16</td>
+<td style="text-align:left">Number</td>
+</tr>
+<tr>
+<td style="text-align:left">bool, System.Boolean</td>
+<td style="text-align:left">Boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">System.String</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">null</td>
+<td style="text-align:left">null</td>
+</tr>
+<tr>
+<td style="text-align:left">DotNetBrowser.JSObject</td>
+<td style="text-align:left">Object</td>
+</tr>
+<tr>
+<td style="text-align:left">DotNetBrowser.JSArray</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">DotNetBrowser.JSFunction</td>
+<td style="text-align:left">Function</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="Console_Messages_889"></a>Console Messages</h3>
+<p>Using <code>ConsoleListener</code> you can listen to JavaScript Console messages with different levels: <code>DEBUG</code>, <code>LOG</code>, <code>WARNING</code> and <code>ERROR</code>. To start receiving Console messages you need to register <code>ConsoleListener</code> for a specified <code>Browser</code> instance. For example:</p>
+<pre><code class="language-csharp">browser.ConsoleMessageEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, DotNetBrowser.Events.ConsoleEventArgs e)
+            {
+                Console.WriteLine(<span class="hljs-string">"Message: "</span> + e.Message);
+            };
+</code></pre>
+<p><em>Example</em></p>
+<pre><code class="language-csharp">&lt;Window x:Class=<span class="hljs-string">"ConsoleListenerSample.MainWindow"</span>
+        xmlns=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        xmlns:x=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        xmlns:wpf=<span class="hljs-string">"clr-namespace:DotNetBrowser.WPF;assembly=DotNetBrowser"</span>
+        Title=<span class="hljs-string">"MainWindow"</span> Height=<span class="hljs-string">"350"</span> Width=<span class="hljs-string">"525"</span>  Closing=<span class="hljs-string">"Window_Closing"</span>&gt;
+    &lt;Grid Name=<span class="hljs-string">"mainLayout"</span>&gt;
+        &lt;wpf:WPFBrowserView  Name=<span class="hljs-string">"browserView"</span> /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Windows;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">ConsoleListenerSample</span>
+{
+
+   <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;summary&gt;</span></span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> Interaction logic for MainWindow.xaml</span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;/summary&gt;</span></span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span> : <span class="hljs-title">Window</span>
+    {
+
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MainWindow</span>(<span class="hljs-params"></span>)
+        </span>{
+            InitializeComponent();
+            browserView.Browser.
+                LoadURL(<span class="hljs-string">"http://www.google.com"</span>);
+            browserView.Browser.ConsoleMessageEvent 
+                +=Browser_ConsoleMessageEvent;
+            browserView.Browser.ExecuteJavaScript
+                (<span class="hljs-string">"console.error(\"Error message\");"</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Browser_ConsoleMessageEvent</span>
+            (<span class="hljs-params"><span class="hljs-keyword">object</span> sender, DotNetBrowser.Events.ConsoleEventArgs e</span>)
+        </span>{
+            Console.WriteLine(<span class="hljs-string">"Message: "</span> + e.Message);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Window_Closing</span>
+            (<span class="hljs-params"><span class="hljs-keyword">object</span> sender, System.ComponentModel.CancelEventArgs e</span>)
+        </span>{
+            <span class="hljs-comment">// Dispose BrowserView when close app window.</span>
+            browserView.Dispose();
+            browserView.Browser.Dispose();
+        }
+    }
+}
+</code></pre>
+<h2><a id="JavaScriptNET_Bridge_958"></a>JavaScript-.NET Bridge</h2>
+<h3><a id="Calling_NET_from_JavaScript_960"></a>Calling .NET from JavaScript</h3>
+<p>JavaScript - .NET Bridge API allows injecting .NET objects into JavaScript code. This is a powerful feature that allows accessing .NET functionality from JavaScript.</p>
+<pre><code>Note: To access JavaScript and inject .NET object, make sure that web page is loaded completely 
+and JavaScript support is enabled. If you inject/register .NET object and then load a web page, 
+all registered .NET objects will be destroyed and will not be available in JavaScript of the loaded web page.
+</code></pre>
+<h4><a id="Injecting_NET_Objects_970"></a>Injecting .NET Objects</h4>
+<p>To inject .NET object into JavaScript you must associate the .NET object with the specified property of a JavaScript object. For example, you can add a new property to global <code>window</code> JavaScript object (other objects would work as well) and associate this property with .NET object using the following code:</p>
+<pre><code class="language-csharp">JSValue window = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"window"</span>);
+window.AsObject().SetProperty(<span class="hljs-string">"csharp"</span>, <span class="hljs-keyword">new</span> CSharpObject());
+</code></pre>
+<pre><code>Note: To inject .NET object into JavaScript code, we recommend that you use the following approach:
+</code></pre>
+<pre><code class="language-csharp"> browser.FinishLoadingFrameEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e)
+            {
+                <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                {
+                    JSValue <span class="hljs-keyword">value</span> = browser.ExecuteJavaScriptAndReturnValue(<span class="hljs-string">"window"</span>);
+                    <span class="hljs-keyword">value</span>.AsObject().SetProperty(<span class="hljs-string">"Account"</span>, <span class="hljs-keyword">new</span> Account());
+                }
+            };
+</code></pre>
+<p>Implementation of the .NET object can be the following:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Save</span>(<span class="hljs-params">String firstName, String lastName</span>)
+            </span>{
+                Console.Out.WriteLine(<span class="hljs-string">"firstName = "</span> + firstName);
+                Console.Out.WriteLine(<span class="hljs-string">"lastName = "</span> + lastName);
+            }
+        }
+</code></pre>
+<pre><code>Note: Make sure that you inject .NET object the class/interface of which is marked as public. 
+Only public classes can be registered and accessed from JavaScript.
+</code></pre>
+<p>Now JavaScript code can invoke oblect public methods:</p>
+<pre><code class="language-csharp">window.Account.Save(<span class="hljs-string">"FirstName"</span>, <span class="hljs-string">"LastName"</span>);
+</code></pre>
+<pre><code>Note: JavaScript code can access/invoke only public methods of the registered .NET object.
+</code></pre>
+<h4><a id="How_JavaScript_calls_NET_method_1022"></a>How JavaScript calls .NET method</h4>
+<p>When JavaScript calls a public method of a registered .NET object, JavaScript parameters are automatically converted to corresponding .NET objects/primitive values by DotNetBrowser.</p>
+<p>If DotNetBrowser cannot convert passed JavaScript values or find a method with appropriate signature, JavaScript error will be thrown.</p>
+<p>If registered .NET object has several methods with the same name and number of parameters, but different parameter types, JavaScript will invoke the first method declared in .NET class.</p>
+<h4><a id="JavaScript_to_NET_types_conversion_1030"></a>JavaScript to .NET types conversion</h4>
+<p>JavaScript and .NET work with different primitive types. DotNetBrowser implements automatic types conversion from JavaScript to .NET types. Here’s how JavaScript objects will be converted to their .NET equivalents by DotNetBrowser:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th style="text-align:left">JavaScript</th>
+<th style="text-align:left">.NET</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">double, float, long, int, short, System.Double, System.Float System.Int64, System.Int32, System.Int16</td>
+</tr>
+<tr>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">bool, System.Boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">String</td>
+<td style="text-align:left">System.String</td>
+</tr>
+<tr>
+<td style="text-align:left">null</td>
+<td style="text-align:left">null</td>
+</tr>
+<tr>
+<td style="text-align:left">Object</td>
+<td style="text-align:left">DotNetBrowser.JSObject</td>
+</tr>
+<tr>
+<td style="text-align:left">Array</td>
+<td style="text-align:left">DotNetBrowser.JSArray</td>
+</tr>
+<tr>
+<td style="text-align:left">Function</td>
+<td style="text-align:left">DotNetBrowser.JSFunction</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="Saving_Web_page_to_image_1044"></a>Saving Web page to image</h2>
+<p>To take a screenshot of the specified web page you need to follow the steps below:</p>
+<ol>
+<li>Create <code>Browser</code> instance.</li>
+<li>Set required <code>Browser</code> size.</li>
+<li>Create a <code>BrowserView</code> (WPF or WinForms) with this <code>Browser</code> instance</li>
+<li>Load required web page by its URL or HTML and wait until its content is rendered completely.</li>
+<li>Get System Drawing.Image of the loaded web page using <code>BrowserView.GetImage()</code>.</li>
+</ol>
+<pre><code>Note: the OnRepaint event used in the following sample is supported for lightweight rendering mode only.
+The GetImage() method works for both modes, but the component should be embedded and shown before calling this method.
+</code></pre>
+<p><strong>Example</strong></p>
+<p>The following example demonstrates how to capture image of the complete web page. In this case you don’t even need to embed the browser view.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Drawing.Imaging;
+<span class="hljs-keyword">using</span> System.Threading;
+<span class="hljs-keyword">using</span> System.Windows;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">HTMLToImageSample</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">WindowMain</span> : <span class="hljs-title">Window</span>
+    {
+        <span class="hljs-keyword">private</span> WPFBrowserView browserView;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">WindowMain</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">this</span>.Loaded += <span class="hljs-keyword">delegate</span>
+            {
+                Width = <span class="hljs-number">400</span>;
+                Height = <span class="hljs-number">300</span>;
+
+                browserView = <span class="hljs-keyword">new</span> WPFBrowserView(BrowserFactory.Create(BrowserType.LIGHTWEIGHT));
+                Browser browser = browserView.Browser;
+
+
+                <span class="hljs-comment">// #1 Set browser initial size</span>
+                browserView.Browser.SetSize(<span class="hljs-number">1280</span>, <span class="hljs-number">1024</span>);
+
+                <span class="hljs-comment">// #2 Load web page and wait until web page is loaded completely.</span>
+                ManualResetEvent resetEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+                FinishLoadingFrameHandler listener = <span class="hljs-keyword">new</span> FinishLoadingFrameHandler((<span class="hljs-keyword">object</span> sender, FinishLoadingEventArgs e) =&gt;
+                {
+                    <span class="hljs-keyword">if</span> (e.IsMainFrame)
+                    {
+                        resetEvent.Set();
+                    }
+                });
+                browser.FinishLoadingFrameEvent += listener;
+                <span class="hljs-keyword">try</span>
+                {
+                    browser.LoadURL(<span class="hljs-string">"teamdev.com/dotnetbrowser"</span>);
+                    resetEvent.WaitOne(<span class="hljs-keyword">new</span> TimeSpan(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">45</span>));
+                }
+                <span class="hljs-keyword">finally</span>
+                {
+                    browser.FinishLoadingFrameEvent -= listener;
+                }
+
+                <span class="hljs-comment">// #3 Set the required document size.</span>
+                JSValue documentHeight = browserView.Browser.ExecuteJavaScriptAndReturnValue(
+                        <span class="hljs-string">"Math.max(document.body.scrollHeight, "</span> +
+                        <span class="hljs-string">"document.documentElement.scrollHeight, document.body.offsetHeight, "</span> +
+                        <span class="hljs-string">"document.documentElement.offsetHeight, document.body.clientHeight, "</span> +
+                        <span class="hljs-string">"document.documentElement.clientHeight);"</span>);
+                JSValue documentWidth = browserView.Browser.ExecuteJavaScriptAndReturnValue(
+                        <span class="hljs-string">"Math.max(document.body.scrollWidth, "</span> +
+                        <span class="hljs-string">"document.documentElement.scrollWidth, document.body.offsetWidth, "</span> +
+                        <span class="hljs-string">"document.documentElement.offsetWidth, document.body.clientWidth, "</span> +
+                        <span class="hljs-string">"document.documentElement.clientWidth);"</span>);
+
+                <span class="hljs-keyword">int</span> scrollBarSize = <span class="hljs-number">25</span>;
+
+                <span class="hljs-keyword">int</span> viewWidth = (<span class="hljs-keyword">int</span>)documentWidth.GetNumber() + scrollBarSize;
+                <span class="hljs-keyword">int</span> viewHeight = (<span class="hljs-keyword">int</span>)documentHeight.GetNumber() + scrollBarSize;
+
+                <span class="hljs-comment">// #4 Register OnRepaint to get notifications</span>
+                <span class="hljs-comment">// about paint events. We expect that web page will be completely rendered twice:</span>
+                <span class="hljs-comment">// 1. When its size is updated.</span>
+                <span class="hljs-comment">// 2. When HTML content is loaded and displayed.</span>
+                ManualResetEvent waitEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+                DrawingView drawingView = (DrawingView)browserView.GetInnerView();
+                drawingView.OnRepaint += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, OnRepaintEventArgs e)
+                {
+                    <span class="hljs-comment">// Make sure that all view content has been repainted.</span>
+                    <span class="hljs-keyword">if</span> (e.UpdatedRect.Size.Equals(e.ClientSize))
+                    {
+                        waitEvent.Set();
+                    }
+                };
+                browserView.Browser.SetSize(viewWidth, viewHeight);
+                <span class="hljs-comment">// #5 Wait until Chromium renders web page content.</span>
+                waitEvent.WaitOne();
+                <span class="hljs-comment">// #6 Save Image of the loaded web page into a PNG file.</span>
+                Dispatcher.BeginInvoke((Action)(() =&gt;
+                {
+                    browserView.GetImage().Save(<span class="hljs-string">@"teamdev.png"</span>, ImageFormat.Png);
+                }));
+            };
+        }
+
+        [STAThread]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+        </span>{
+            Application app = <span class="hljs-keyword">new</span> Application();
+
+            WindowMain wnd = <span class="hljs-keyword">new</span> WindowMain();
+
+            app.Run(wnd);
+
+            <span class="hljs-keyword">var</span> browser = wnd.browserView.Browser;
+            wnd.browserView.Dispose();
+            browser.Dispose();
+        }
+    }
+
+}
+</code></pre>
+<h4><a id="Calculating_Page_Size_1172"></a>Calculating Page Size</h4>
+<p>If you need to take a screenshot of the whole web page including scrollable hidden parts and you don’t know the dimensions of the web page, then you need to calculate them using the following approach:</p>
+<pre><code class="language-csharp">JSValue documentHeight = browser.ExecuteJavaScriptAndReturnValue(
+        <span class="hljs-string">"Math.max(document.body.scrollHeight, "</span> +
+        <span class="hljs-string">"document.documentElement.scrollHeight, document.body.offsetHeight, "</span> +
+        <span class="hljs-string">"document.documentElement.offsetHeight, document.body.clientHeight, "</span> +
+        <span class="hljs-string">"document.documentElement.clientHeight);"</span>);
+JSValue documentWidth = browser.executeJavaScriptAndReturnValue(
+        <span class="hljs-string">"Math.max(document.body.scrollWidth, "</span> +
+        <span class="hljs-string">"document.documentElement.scrollWidth, document.body.offsetWidth, "</span> +
+        <span class="hljs-string">"document.documentElement.offsetWidth, document.body.clientWidth, "</span> +
+        <span class="hljs-string">"document.documentElement.clientWidth);"</span>);
+
+<span class="hljs-keyword">int</span> scrollBarSize = <span class="hljs-number">25</span>;
+<span class="hljs-keyword">int</span> viewWidth = (<span class="hljs-keyword">int</span>) documentWidth.GetNumber() + scrollBarSize;
+<span class="hljs-keyword">int</span> viewHeight = (<span class="hljs-keyword">int</span>) documentHeight.GetNumber() + scrollBarSize;
+</code></pre>
+<p>In this code we use <code>JavaScript and</code>DOM API` to get dimensions of the loaded document.</p>
+<h2><a id="Popups_1195"></a>Popups</h2>
+<p>Any web page can display pop-up windows using <code>window.open()</code> JavaScript function. For example:</p>
+<pre><code class="language-csharp">window.open(<span class="hljs-string">"http://www.google.com"</span>, <span class="hljs-string">"_blank"</span>, <span class="hljs-string">"toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400"</span>);
+</code></pre>
+<p>DotNetBrowser API provides <code>PopupHandler</code> class to customize handling pop-up windows creation. To customize popup-windows you must register your own implementation of the <code>PopupHandler</code> depending on the GUI Toolkit you use in your .NET application. See:</p>
+<ul>
+<li><a href="http://dotnetbrowser-support.teamdev.com/samples/wpf-popups">Handling Popups WPF</a></li>
+<li><a href="http://dotnetbrowser-support.teamdev.com/samples/winforms---customize-popup">Handling Popups WinForms</a></li>
+</ul>
+<h4><a id="Disable_Popups_1208"></a>Disable Popups</h4>
+<p>By default popup windows are enabled. To disable popup windows you must create your own implementation of the <code>PopupHandler</code> and return null from the <code>HandlePopup()</code> method as shown below:</p>
+<pre><code class="language-csharp"> <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SamplePopupHandler</span> : <span class="hljs-title">PopupHandler</span> 
+ { 
+     <span class="hljs-function"><span class="hljs-keyword">public</span> PopupContainer <span class="hljs-title">HandlePopup</span>(<span class="hljs-params">PopupParams popupParams</span>) 
+     </span>{ 
+         <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>; 
+     } 
+ }
+</code></pre>
+<h4><a id="Usage_1222"></a>Usage:</h4>
+<pre><code class="language-csharp"> browser.PopupHandler = <span class="hljs-keyword">new</span> SamplePopupHandler();
+</code></pre>
+<h3><a id="Disposing_Popup_1228"></a>Disposing Popup</h3>
+<p>There are two ways of disposing popup window: manually, using <code>Browser.Dispose()</code> method, and programmatically from JavaScript, using <code>window.close()</code> function. If you use your own implementation of the <code>PopupHandler</code>, you must handle situation when popup window is disposed from <code>JavaScript</code>. Using <code>DisposeEvent</code> you can listen to the event when popup <code>Browser</code> instance is disposed to destroy popup’s container. Otherwise you might have an issue when <code>Browser</code> instance is disposed, but its container is still open and displays gray content.</p>
+<p>The following code demonstrates how to handle such situation in your <code>PopupHandler</code> implementation:</p>
+<p><strong>WinForms:</strong></p>
+<pre><code class="language-csharp">browser.DisposeEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, DisposeEventArgs e)
+{
+    synchronizationContext.Send(<span class="hljs-keyword">new</span> SendOrPostCallback(
+    <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> state)
+    {
+        form.Controls.Clear();
+        form.Hide();
+        form.Close();
+    }), <span class="hljs-keyword">null</span>);
+};
+</code></pre>
+<p><strong>WPF:</strong></p>
+<pre><code class="language-csharp">browser.DisposeEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, DisposeEventArgs e)
+{
+    Application.Current.Dispatcher.Invoke((Action)(() =&gt;
+    {
+        window.Content = <span class="hljs-keyword">null</span>;
+        window.Hide();
+        window.Close();
+    }));
+};
+</code></pre>
+<h2><a id="Dialogs_1263"></a>Dialogs</h2>
+<h3><a id="OnBeforeUnload_1265"></a>OnBeforeUnload</h3>
+<p>The <code>onbeforeunload</code> event fires when the document is about to be unloaded. This event allows you to display a message in a confirmation dialog box to inform the user whether he/she wants to stay or leave the current page. DotNetBrowser API allows handling this dialog using <code>DialogHandler</code> API. By default the dialog is displayed. Using your custom implementation of the <code>DialogHandler</code>, you can handle this dialog in your own way. For example, you can display your custom message dialog or suppress the dialog and don’t allow unloading the web page.</p>
+<p>The following sample demonstrates how to handle the <code>onbeforeunload</code> dialog:</p>
+<h4><a id="MainWindowxaml_1271"></a>MainWindow.xaml</h4>
+<pre><code class="language-csharp">&lt;Window x:Class=<span class="hljs-string">"WPF.DialogHandlerSample.MainWindow"</span>
+        xmlns=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        xmlns:x=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        xmlns:wpf=<span class="hljs-string">"clr-namespace:DotNetBrowser.WPF;assembly=DotNetBrowser"</span>
+        Title=<span class="hljs-string">"MainWindow"</span> Height=<span class="hljs-string">"350"</span> Width=<span class="hljs-string">"525"</span> Closing=<span class="hljs-string">"Window_Closing"</span>&gt;
+    &lt;Grid Name=<span class="hljs-string">"mainLayout"</span>&gt;
+        &lt;wpf:WPFBrowserView Name=<span class="hljs-string">"browserView"</span> HorizontalAlignment=<span class="hljs-string">"Stretch"</span> VerticalAlignment=<span class="hljs-string">"Stretch"</span> /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<h4><a id="MainWindowxamlcs_1285"></a>MainWindow.xaml.cs</h4>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Windows;
+<span class="hljs-keyword">using</span> System.Windows.Controls;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">WPF.DialogHandlerSample</span>
+{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span> : <span class="hljs-title">Window</span>
+    {
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MainWindow</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-comment">// Initialize WPF Application UI.</span>
+            InitializeComponent();
+
+            <span class="hljs-keyword">var</span> defaultHandler = browserView.Browser.DialogHandler; 
+            browserView.Browser.DialogHandler = <span class="hljs-keyword">new</span> CustomDialogHandler(defaultHandler);
+
+            <span class="hljs-comment">// Load HTML from string into BrowserView.</span>
+            browserView.Browser.LoadHTML(<span class="hljs-string">"&lt;html&gt;&lt;body onbeforeunload='return myFunction()'&gt;"</span> +
+                <span class="hljs-string">"&lt;a href='http://www.google.com'&gt;Click here to leave&lt;/a&gt;"</span> +
+                <span class="hljs-string">"&lt;script&gt;function myFunction() { return 'Leave this web page?'; }"</span> +
+                <span class="hljs-string">"&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Window_Closing</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, System.ComponentModel.CancelEventArgs e</span>)
+        </span>{
+            browserView.Dispose();
+            browserView.Browser.Dispose();
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">CustomDialogHandler</span> : <span class="hljs-title">DialogHandler</span> 
+    {
+        <span class="hljs-keyword">private</span> DialogHandler defaultHandler;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomDialogHandler</span>(<span class="hljs-params">DialogHandler defaultHandler</span>)
+        </span>{
+            <span class="hljs-keyword">this</span>.defaultHandler = defaultHandler;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnBeforeUnload</span>(<span class="hljs-params">UnloadDialogParams parameters</span>) </span>{
+            CloseStatus returnValue = CloseStatus.CANCEL;
+            String title = <span class="hljs-string">"Confirm Navigation"</span>;
+            String message = parameters.Message;
+            MessageBoxResult result = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Question);
+            <span class="hljs-keyword">if</span> (result == MessageBoxResult.Yes)
+            {
+                returnValue = CloseStatus.OK;
+            }
+            <span class="hljs-keyword">return</span> returnValue;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnAlert</span>(<span class="hljs-params">DialogParams parameters</span>)
+        </span>{
+            defaultHandler.OnAlert(parameters);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnConfirmation</span>(<span class="hljs-params">DialogParams parameters</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> defaultHandler.OnConfirmation(parameters);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnFileChooser</span>(<span class="hljs-params">FileChooserParams parameters</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> defaultHandler.OnFileChooser(parameters);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnPrompt</span>(<span class="hljs-params">PromptDialogParams parameters</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> defaultHandler.OnPrompt(parameters);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnReloadPostData</span>(<span class="hljs-params">ReloadPostDataParams parameters</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> defaultHandler.OnReloadPostData(parameters);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> CloseStatus <span class="hljs-title">OnSelectCertificate</span>(<span class="hljs-params">CertificatesDialogParams parameters</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> defaultHandler.OnSelectCertificate(parameters);
+        }
+    }
+}
+</code></pre>
+<h3><a id="Select_SSL_Certificate_1376"></a>Select SSL Certificate</h3>
+<p>Using DotNetBrowser <code>DialogHandler</code> API you can handle situation when Select SSL Certificate dialog should be displayed. By default DotNetBrowser displays its own implementation of the dialog where user can select required certificate in the list of available certificates. In order to override default behavior you must register your own implementation of the <code>DialogHandler</code> interface with the overridden <code>DialogHandler.OnSelectCertificate(CertificatesDialogParams parameters)</code> method. In your implementation you can display your own dialog or suppress the dialog and select required certificate programmatically.</p>
+<p>The following sample demonstrates how to override default implementation with the custom Select SSL Certificate logic:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">CertificateSelectSample</span>
+{
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;summary&gt;</span></span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> Demonstrates how to handle SSL certificate selection.</span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;/summary&gt;</span></span>
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            Browser browser = BrowserFactory.Create();
+
+            browser.LoadHandler = <span class="hljs-keyword">new</span> SampleLoadHandler();
+
+            browser.LoadURL(<span class="hljs-string">"&lt;URL that causes Select SSL Certificate dialog&gt;"</span>);
+
+        }
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleLoadHandler</span> : <span class="hljs-title">DefaultLoadHandler</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">OnSelectCertificate</span>(<span class="hljs-params">CertificatesDialogParams parameters</span>)
+            </span>{
+                String message = <span class="hljs-string">"Select a certificate to authenticate yourself to "</span> + parameters.HostPortPair.HostPort;
+                List&lt;Certificate&gt; certificates = parameters.Certificates;
+                <span class="hljs-keyword">if</span> (!(certificates.Count == <span class="hljs-number">0</span>)) {
+                    Object selectedValue = certificates[<span class="hljs-number">0</span>];
+                    <span class="hljs-keyword">if</span> (selectedValue != <span class="hljs-keyword">null</span>) {
+                        parameters.SelectedCertificate = ((Certificate) selectedValue);
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+                    }
+                }
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+        }
+    }
+}
+</code></pre>
+<h4><a id="Handling_SSL_Certificate_Errors_1426"></a>Handling SSL Certificate Errors</h4>
+<p>By default DotNetBrowser rejects loading HTTPS web sites with invalid SSL certificates for security reasons. If you need to ignore invalid SSL certificates and continue loading web page, you can register your <code>LoadHandler</code> implementation where you decide whether invalid SSL certificates should be ignored or not. For example:</p>
+<pre><code class="language-csharp"> <span class="hljs-keyword">private</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleLoadHandler</span> : <span class="hljs-title">DefaultLoadHandler</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">OnCertificateError</span>(<span class="hljs-params">CertificateErrorParams errorParams</span>)
+            </span>{
+
+                <span class="hljs-comment">// Return false to ignore certificate error.</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+        }
+</code></pre>
+<p>The CertificateErrorParams parameter provides information about invalid SSL certificate. You can decide whether certificate is allowed or not, using its details.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">CertificateErrorSample</span>
+{
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;summary&gt;</span></span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> Demonstrates how to handle SSL certificate errors.</span>
+    <span class="hljs-comment"><span class="hljs-xmlDocTag">///</span> <span class="hljs-xmlDocTag">&lt;/summary&gt;</span></span>
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            Browser browser = BrowserFactory.Create();
+
+            browser.LoadHandler = <span class="hljs-keyword">new</span> SampleLoadHandler();
+
+            browser.LoadURL(<span class="hljs-string">"&lt;https-url-with-invalid-ssl-certificate&gt;"</span>);
+
+        }
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleLoadHandler</span> : <span class="hljs-title">DefaultLoadHandler</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">OnCertificateError</span>(<span class="hljs-params">CertificateErrorParams errorParams</span>)
+            </span>{
+                Certificate certificate = errorParams.Certificate;
+
+                Console.WriteLine(<span class="hljs-string">"ErrorCode = "</span> + errorParams.CertificateError);
+                Console.WriteLine(<span class="hljs-string">"SerialNumber = "</span> + certificate.SerialNumber);
+                Console.WriteLine(<span class="hljs-string">"FingerPrint = "</span> + certificate.FingerPrint);
+                Console.WriteLine(<span class="hljs-string">"CAFingerPrint = "</span> + certificate.CAFingerPrint);
+
+                <span class="hljs-keyword">string</span> subject = certificate.Subject;
+                Console.WriteLine(<span class="hljs-string">"Subject = "</span> + subject);
+
+                <span class="hljs-keyword">string</span> issuer = certificate.Issuer;
+                Console.WriteLine(<span class="hljs-string">"Issuer = "</span> + issuer);
+
+                Console.WriteLine(<span class="hljs-string">"KeyUsages = "</span> + String.Join(<span class="hljs-string">", "</span>, certificate.KeyUsages));
+                Console.WriteLine(<span class="hljs-string">"ExtendedKeyUsages = "</span> + String.Join(<span class="hljs-string">", "</span>, certificate.ExtendedKeyUsages));
+
+                Console.WriteLine(<span class="hljs-string">"HasExpired = "</span> + certificate.HasExpired);
+
+                <span class="hljs-comment">// Return false to ignore certificate error.</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+        }
+    }
+}
+</code></pre>
+<h3><a id="File_Downloads_1498"></a>File Downloads</h3>
+<p>DotNetBrowser provides API that allows handling all the file downloads. Using this API you can control what files should be downloaded, provide path to the destination directory, where file must be saved, and track download progress.</p>
+<p>You can register your own implementation of the <code>DownloadHandler</code> interface to handle file downloads in your own way. The following sample demonstrates how to do this:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> System.Threading;
+<span class="hljs-keyword">using</span> System.Threading.Tasks;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">DownloadSample</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-keyword">using</span> (Browser browser = BrowserFactory.Create())
+            {
+
+                <span class="hljs-keyword">var</span> downloadHandler = <span class="hljs-keyword">new</span> SampleDownloadHandler();
+                browser.DownloadHandler = downloadHandler;
+
+                browser.LoadURL(<span class="hljs-string">"ftp://ftp.teamdev.com/updates/jxbrowser-4.0-beta.zip"</span>);
+                downloadHandler.Wait();
+            }
+        }
+
+        <span class="hljs-keyword">class</span> <span class="hljs-title">SampleDownloadHandler</span> : <span class="hljs-title">DownloadHandler</span>
+        {
+            <span class="hljs-keyword">private</span> ManualResetEvent waitEvent = <span class="hljs-keyword">new</span> ManualResetEvent(<span class="hljs-keyword">false</span>);
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">AllowDownload</span>(<span class="hljs-params">DownloadItem download</span>)
+            </span>{
+                download.DownloadEvent += <span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">object</span> sender, DownloadEventArgs e)
+                {
+                    DownloadItem downloadItem = e.Item;
+                    <span class="hljs-keyword">if</span> (downloadItem.Completed)
+                    {
+                        Console.Out.WriteLine(<span class="hljs-string">"Download is completed!"</span>);
+                        waitEvent.Set();
+                    }
+                };
+                Console.Out.WriteLine(<span class="hljs-string">"Destination file: "</span> +
+                        download.DestinationFile);                
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Wait</span>(<span class="hljs-params"></span>)
+            </span>{
+                waitEvent.WaitOne();
+            }
+        }
+    }
+}
+</code></pre>
+<p>The <code>DownloadItem</code> class provides methods for pausing and canceling download process. See its corresponding methods.</p>
+<h3><a id="File_Upload_1562"></a>File Upload</h3>
+<p>Using DotNetBrowser <code>DialogHandler</code> API you can handle situation when web page needs to display File Open dialog (e.g. when user clicks File Input element on a web form). Using this API you can display your own File Open dialog or suppress the dialog at all and provide path to a file program.</p>
+<pre><code>Note: By default DotNetBrowser displays the standard OpenFileChooser dialog.
+</code></pre>
+<p>The following sample demonstrates how to modify this logic:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.Events;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+<span class="hljs-keyword">using</span> Microsoft.Win32;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> System.Windows;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">FileUploadSample</span>
+{
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">WindowMain</span> : <span class="hljs-title">Window</span>
+        {
+            <span class="hljs-keyword">private</span> WPFBrowserView browserView;
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">WindowMain</span>(<span class="hljs-params"></span>)
+            </span>{
+                Browser browser = BrowserFactory.Create();
+                browserView = <span class="hljs-keyword">new</span> WPFBrowserView(browser);
+
+                browser.DialogHandler = <span class="hljs-keyword">new</span> SampleDialogHandler(<span class="hljs-keyword">this</span>);
+
+                Content = browserView;
+
+                Width = <span class="hljs-number">1024</span>;
+                Height = <span class="hljs-number">768</span>;
+                <span class="hljs-keyword">this</span>.Loaded += WindowMain_Loaded;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">WindowMain_Loaded</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, RoutedEventArgs e</span>)
+            </span>{
+                browserView.Browser.LoadHTML(<span class="hljs-string">"http://www.cs.tut.fi/~jkorpela/forms/file.html"</span>);
+            }
+
+            <span class="hljs-keyword">private</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleDialogHandler</span> : <span class="hljs-title">DialogHandler</span>
+            {
+                <span class="hljs-keyword">private</span> WindowMain windowMain;
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SampleDialogHandler</span>(<span class="hljs-params">WindowMain windowMain</span>)
+                </span>{
+                    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Complete member initialization</span>
+                    <span class="hljs-keyword">this</span>.windowMain = windowMain;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> CloseStatus <span class="hljs-title">OnFileChooser</span>(<span class="hljs-params">FileChooserParams parameters</span>)
+                </span>{
+                    CloseStatus returnValue = CloseStatus.CANCEL;
+
+                    <span class="hljs-keyword">bool</span> isOpenMode = parameters.Mode == FileChooserMode.Open;
+                    <span class="hljs-keyword">bool</span> isOpenMultipleMode = parameters.Mode == FileChooserMode.OpenMultiple;
+                    <span class="hljs-keyword">if</span> (isOpenMode || isOpenMultipleMode)
+                    {
+                        Application.Current.Dispatcher.Invoke((Action)(() =&gt;
+                        {
+                            OpenFileDialog fileChooser = <span class="hljs-keyword">new</span> OpenFileDialog();
+                            fileChooser.Multiselect = isOpenMultipleMode;
+                            fileChooser.Title = <span class="hljs-string">"Open"</span>;
+                            fileChooser.Filter = parameters.Filter;
+
+                            fileChooser.FileOk += <span class="hljs-keyword">delegate</span>
+                            {
+                                <span class="hljs-keyword">if</span> (isOpenMultipleMode)
+                                {
+                                    <span class="hljs-keyword">string</span>[] selectedFiles = fileChooser.FileNames;
+                                    parameters.SelectedFiles = String.Join(<span class="hljs-string">"|"</span>, selectedFiles);
+                                }
+                                <span class="hljs-keyword">else</span>
+                                {
+                                    parameters.SelectedFiles = fileChooser.FileName;
+                                }
+                                returnValue = CloseStatus.OK;
+                            };
+
+                            fileChooser.ShowDialog(windowMain);
+                        }));
+                    }
+
+                    <span class="hljs-keyword">return</span> returnValue;
+                }
+            }
+
+            [STAThread]
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+            </span>{
+                Application app = <span class="hljs-keyword">new</span> Application();
+
+                WindowMain wnd = <span class="hljs-keyword">new</span> WindowMain();
+                app.Run(wnd);
+
+                <span class="hljs-keyword">var</span> browser = wnd.browserView.Browser;
+                wnd.browserView.Dispose();
+                browser.Dispose();
+            }
+        }
+    }
+}
+</code></pre>
+<h2><a id="Plugins_1673"></a>Plugins</h2>
+<h3><a id="About_Plugins_1675"></a>About Plugins</h3>
+<p>DotNetBrowser inherits Google Chromium <a href="http://www.chromium.org/developers/design-documents/plugin-architecture">Plugin Architecture</a>, but it can display only windowless plugins, because it uses a lightweight component to display HTML web pages. Windowless plugins are designed to run directly within the rendering pipeline. Right now only Flash and Silverlight supports windowless mode, so they can be displayed by DotNetBrowser.</p>
+<pre><code>Note: Since version 1.7, NPAPI plugins are no longer supported. 
+If you have to use NPAPI plugins, we recommend that you stick to DotNetBrowser versions up to 1.7
+</code></pre>
+<h3><a id="Plugins_Manager_1684"></a>Plugins Manager</h3>
+<p>To get information about all installed and available plugins you can use the <code>PluginManager.GetPluginsInfo()</code> method:</p>
+<pre><code class="language-csharp">PluginManager pluginManager = browser.PluginManager;
+    <span class="hljs-keyword">foreach</span> (PluginInfo pluginInfo <span class="hljs-keyword">in</span> pluginManager.GetPluginsInfo())
+    {
+        Console.WriteLine(<span class="hljs-string">"Plugin name: "</span> + pluginInfo.Name);
+    }
+</code></pre>
+<p>To enable/disable specified plugin register your own <code>PluginFilter</code> implementation:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomPluginFilter</span> : <span class="hljs-title">PluginFilter</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsPluginAllowed</span>(<span class="hljs-params">PluginInfo pluginInfo</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> pluginInfo.MimeTypes.Contains(<span class="hljs-string">"application/pdf"</span>);
+        }
+    }
+</code></pre>
+<pre><code class="language-csharp">   pluginManager.PluginFilter = <span class="hljs-keyword">new</span> CustomPluginFilter();
+</code></pre>
+<h2><a id="UserAgent_1712"></a>User-Agent</h2>
+<p>The user-agent string can be modified only once, before you create any <code>Browser</code> instances. You can provide your own user-agent string using the <code>BrowserPreferences.SetUserAgent(String userAgent)</code> method:</p>
+<pre><code class="language-csharp">BrowserPreferences.SetUserAgent(<span class="hljs-string">"My User Agent String"</span>);
+</code></pre>
+<p><strong>Example</strong></p>
+<h4><a id="MainWindowxaml_1722"></a>MainWindow.xaml</h4>
+<pre><code class="language-csharp">&lt;Window x:Class=<span class="hljs-string">"WPF.UserAgent.MainWindow"</span>
+        xmlns=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        xmlns:x=<span class="hljs-string">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        Title=<span class="hljs-string">"MainWindow"</span> Height=<span class="hljs-string">"350"</span> Width=<span class="hljs-string">"525"</span> Closing=<span class="hljs-string">"Window_Closing"</span>&gt;
+    &lt;Grid Name=<span class="hljs-string">"mainLayout"</span>&gt;
+        
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<h4><a id="MainWindowxamlcs_1735"></a>MainWindow.xaml.cs</h4>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.IO;
+<span class="hljs-keyword">using</span> DotNetBrowser;
+<span class="hljs-keyword">using</span> DotNetBrowser.WPF;
+<span class="hljs-keyword">using</span> System.Windows;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">WPF.UserAgent</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">partial</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span> : <span class="hljs-title">Window</span>
+    {
+        Browser browser;
+        WPFBrowserView browserView;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MainWindow</span>(<span class="hljs-params"></span>)
+        </span>{
+            BrowserPreferences.SetUserAgent(<span class="hljs-string">"My User Agent String"</span>);
+            InitializeComponent();
+
+            browser = BrowserFactory.Create();
+            browserView = <span class="hljs-keyword">new</span> WPFBrowserView(browser);
+            mainLayout.Children.Add(browserView);
+
+            browserView.Browser.LoadURL(<span class="hljs-string">"http://whatsmyuseragent.com/"</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Window_Closing</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, System.ComponentModel.CancelEventArgs e</span>)
+        </span>{
+            <span class="hljs-comment">// Dispose BrowserView when close app window.</span>
+            browserView.Dispose();
+            browser.Dispose();
+        }
+    }
+}
+</code></pre>
+
+</body></html>

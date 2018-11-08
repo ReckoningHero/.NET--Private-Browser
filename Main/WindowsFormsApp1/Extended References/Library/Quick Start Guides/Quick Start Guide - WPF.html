@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="CONTENT-LANGUAGE" content="en-US"/>
+    <title>Quick Start Guide &mdash; WPF</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection"/>
+</head>
+
+<body>
+<div class="main-wrapper">
+    <h1 class="doc_title">Quick Start Guide &mdash; WPF</h1>
+
+    <div class="chapter">
+
+    <p>In this Quick Start Guide you will learn how to download DotNetBrowser library, get evaluation license, create, configure and
+        run your first .NET WPF Application that loads and displays <a href="http://www.google.com">www.google.com</a>
+        web page.</p>
+	<p>
+		<strong>Environment:</strong></br>
+		Windows 7, Microsoft Visual Studio 2013, .NET Framework 4.0.
+	</p>
+
+    <h2>Download Library</h2>
+
+    <p>To download DotNetBrowser library navigate to <a href="http://www.teamdev.com/dotnetbrowser">http://www.teamdev.com/dotnetbrowser</a>
+        and click <strong>Download</strong> button. Extract downloaded <code>dotnetbrowser.zip</code> archive into the <code>D:\Projects\DotNetBrowser\</code> directory</p>
+
+    <h2>Download License</h2>
+
+    <p>To get free 30-days evaluation license please fill the <a
+           href="http://www.teamdev.com/dotnetbrowser#evaluate">web form</a>
+       and click <strong>Send Me Evaluation Key</strong> button. You will receive an email with a link. Use this link to download evaluation license (<code>teamdev.licenses</code>). Save the license file in the <code>D:\Projects\DotNetBrowser\Library\</code> directory.</p>
+
+    <h2>Create WPF Application</h2>
+
+    <p>Create a new <code>WPF.DotNetBrowser</code> WPF Application C# Project in the <code>D:\Projects\DotNetBrowser</code> directory:</p>
+    <p><img src="images/vs-new-project.png" alt=""/></p>
+
+    <h2>Add DotNetBrowser.dll</h2>
+
+    <p>In <strong>Solution Explorer</strong> right click <strong>References</strong> and select <strong>Add References...</strong> menu item:</p>
+    <p><img src="images/vs-add-ref-menu.png" alt=""/></p>
+
+    <p>In opened <strong>Reference Manager</strong> dialog click <strong>Browser...</strong> button:</p>
+    <p><img src="images/vs-add-ref-browse.png" alt=""/></p>
+
+    <p>Select <code>D:\Projects\DotNetBrowser\Library\DotNetBrowser.dll</code> file and click <strong>Add</strong> button:</p>
+    <p><img src="images/vs-add-ref-browse-dll.png" alt=""/></p>
+
+    <p>Click <strong>OK</strong> button:</p>
+    <p><img src="images/vs-add-ref-browse-ok.png" alt=""/></p>
+
+	<h2>Add License</h2>
+
+	<p>In <strong>Solution Explorer</strong> right click <strong>WPF.DotNetBrowser</strong> and select <strong>Add</strong> &mdash; <strong>Existing Item...</strong> menu item:</p>
+    <p><img src="images/vs-add-item.png" alt=""/></p>
+    
+	<p>In <strong>File Open</strong> dialog select <code>D:\Projects\DotNetBrowser\Library\teamdev.licenses</code> file and click <strong>Add</strong> button:</p>
+	<p><img src="images/vs-select-item.png" alt=""/></p>
+    
+	<p>In <strong>Solution Explorer</strong> right click <strong>teamdev.licenses</strong> and select <strong>Properties</strong> menu item:</p>
+	<p><img src="images/vs-item-properties.png" alt=""/></p>
+    
+	<p>In <strong>Properties</strong> panel change <strong>Build Action</strong> to <strong>Embedded Resource</strong>:</p>
+	<p><img src="images/vs-item-type.png" alt=""/></p>
+	
+    <h2>Change Source Code</h2>
+
+    <p>Insert the following code into <code>MainWindow.xaml</code> file:</p>
+    <pre>&lt;Window x:Class="WPF.DotNetBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"&gt;
+    &lt;Grid Name="mainLayout"&gt;
+
+    &lt;/Grid&gt;
+&lt;/Window&gt;</pre>
+
+    <p>Insert the following code into <code>MainWindow.xaml.cs</code> file:</p>
+    <pre>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using DotNetBrowser;
+using DotNetBrowser.WPF;
+
+namespace WPF.DotNetBrowser
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            Browser browser = BrowserFactory.Create();
+            WPFBrowserView browserView = new WPFBrowserView(browser);
+            mainLayout.Children.Add(browserView);
+            browser.LoadURL("http://www.google.com");
+        }
+    }
+}
+</pre>
+
+    <h2>Run Application</h2>
+
+    <p>To run application press <strong>F5</strong> or click <strong>Start</strong> button in tool bar. If you did everything correctly then you should see the following output:</p>
+    <img src="images/app.png" alt=""/>
+
+    <div class="copyright">
+        Copyright &copy; 2002-2015 TeamDev Ltd.
+    </div>
+</div>
+</body>
+</html>

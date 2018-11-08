@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="CONTENT-LANGUAGE" content="en-US"/>
+    <title>Quick Start Guide &mdash; WinForms</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection"/>
+</head>
+
+<body>
+<div class="main-wrapper">
+    <h1 class="doc_title">Quick Start Guide &mdash; WinForms</h1>
+
+    <div class="chapter">
+
+    <p>In this Quick Start Guide you will learn how to download the DotNetBrowser library, get an evaluation license, create, configure and
+        run your first .NET WinForms Application that loads and displays the <a href="http://www.google.com">www.google.com</a>
+        web page.</p>
+	<p>
+		<strong>Environment:</strong></br>
+		Windows 7, Microsoft Visual Studio 2013, .NET Framework 4.0.
+	</p>
+
+    <h2>Download the Library</h2>
+
+    <p>To download the DotNetBrowser library navigate to <a href="http://www.teamdev.com/dotnetbrowser">http://www.teamdev.com/dotnetbrowser</a>
+        and click the <strong>Download</strong> button. Extract the downloaded <code>dotnetbrowser.zip</code> archive into the <code>D:\Projects\DotNetBrowser\</code> directory.</p>
+
+    <h2>Download License</h2>
+
+    <p>To get a free 30-days evaluation license please fill in the <a
+           href="http://www.teamdev.com/dotnetbrowser#evaluate">web form</a>
+       and click <strong>Send Me Evaluation Key</strong> button. You will receive an email with a link. Use this link to download the evaluation license (<code>teamdev.licenses</code>). Save the license file in the <code>D:\Projects\DotNetBrowser\Library\</code> directory.</p>
+
+    <h2>Create a Windows Forms Application</h2>
+
+    <p>Create a new <code>WinForms.DotNetBrowser</code> Windows Forms Application C# Project in the <code>D:\Projects\DotNetBrowser</code> directory:</p>
+    <p><img src="images/vs-wf-new-project.png" alt=""/></p>
+
+    <h2>Add DotNetBrowser.dll</h2>
+
+    <p>In <strong>Solution Explorer</strong> right-click <strong>References</strong> and select the <strong>Add Reference...</strong> menu item:</p>
+    <p><img src="images/vs-wf-add-ref-menu.png" alt=""/></p>
+
+    <p>In the opened <strong>Reference Manager</strong> dialog click the <strong>Browse...</strong> button:</p>
+    <p><img src="images/vs-wf-add-ref-browse.png" alt=""/></p>
+
+    <p>Select the <code>D:\Projects\DotNetBrowser\Library\DotNetBrowser.dll</code> file and click the <strong>Add</strong> button:</p>
+    <p><img src="images/vs-wf-add-ref-browse-dll.png" alt=""/></p>
+
+    <p>Click <strong>OK</strong>:</p>
+    <p><img src="images/vs-wf-add-ref-browse-ok.png" alt=""/></p>
+
+	<h2>Add the License</h2>
+
+	<p>In <strong>Solution Explorer</strong> right-click <strong>WPF.DotNetBrowser</strong> and select the <strong>Add</strong> &mdash; <strong>Existing Item...</strong> menu item:</p>
+    <p><img src="images/vs-wf-add-item.png" alt=""/></p>
+    
+	<p>In the <strong>File Open</strong> dialog select the <code>D:\Projects\DotNetBrowser\Library\teamdev.licenses</code> file and click <strong>Add</strong> button:</p>
+	<p><img src="images/vs-wf-select-item.png" alt=""/></p>
+    
+	<p>In <strong>Solution Explorer</strong> right-click <strong>teamdev.licenses</strong> and select <strong>Properties</strong>:</p>
+	<p><img src="images/vs-wf-item-properties.png" alt=""/></p>
+    
+	<p>In the <strong>Properties</strong> panel change <strong>Build Action</strong> to <strong>Embedded Resource</strong>:</p>
+	<p><img src="images/vs-wf-item-type.png" alt=""/></p>
+	
+    <h2>Change the Source Code</h2>
+
+    <p>Insert the following code into the <code>Form1.cs</code> file:</p>
+    <pre>using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DotNetBrowser;
+using DotNetBrowser.WindowsForm;
+
+namespace WinForms.DotNetBrowser
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+
+            Browser browser = BrowserFactory.Create();
+            WinFormsBrowserView browserView = new WinFormsBrowserView(browser);
+            Controls.Add(browserView);
+            browser.LoadURL("http://www.google.com");
+        }
+    }
+}
+</pre>
+	<p><img src="images/vs-wf-form1.png" alt=""/></p>
+
+    <h2>Run the Application</h2>
+
+    <p>To run the application press <strong>F5</strong> or click <strong>Start</strong> button in the toolbar. If you do everything correctly then you should see the following output:</p>
+    <img src="images/wf-app.png" alt=""/>
+
+    <div class="copyright">
+        Copyright &copy; 2002-2017 TeamDev Ltd.
+    </div>
+</div>
+</body>
+</html>

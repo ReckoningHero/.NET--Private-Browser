@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['failloadingframeevent',['FailLoadingFrameEvent',['../interface_dot_net_browser_1_1_browser.html#a9b8cdda63d851b9d99b39e28223b5ec6',1,'DotNetBrowser.Browser.FailLoadingFrameEvent()'],['../class_dot_net_browser_1_1_win_forms_1_1_win_forms_browser_view.html#a5ce77afec22799434329c08808080ad6',1,'DotNetBrowser.WinForms.WinFormsBrowserView.FailLoadingFrameEvent()'],['../class_dot_net_browser_1_1_w_p_f_1_1_w_p_f_browser_view.html#a8251803fe5fa3bbfc8e0a0b4718b22c1',1,'DotNetBrowser.WPF.WPFBrowserView.FailLoadingFrameEvent()']]],
+  ['finishloadingframeevent',['FinishLoadingFrameEvent',['../interface_dot_net_browser_1_1_browser.html#ac76a261f145db7793e4a0b13a21699d2',1,'DotNetBrowser.Browser.FinishLoadingFrameEvent()'],['../class_dot_net_browser_1_1_win_forms_1_1_win_forms_browser_view.html#aca009ee214f0aeb747570a30bab9e747',1,'DotNetBrowser.WinForms.WinFormsBrowserView.FinishLoadingFrameEvent()'],['../class_dot_net_browser_1_1_w_p_f_1_1_w_p_f_browser_view.html#a64f3648fc0f3455b84234a5c86de0658',1,'DotNetBrowser.WPF.WPFBrowserView.FinishLoadingFrameEvent()']]]
+];
