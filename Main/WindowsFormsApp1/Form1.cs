@@ -29,12 +29,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-            //WebBrowser myBrowser = new WebBrowser();
+            WebBrowser myBrowser = new WebBrowser();
 
-            Browser browser = BrowserFactory.Create();
-            WinFormsBrowserView browserView = new WinFormsBrowserView(browser);
-            Controls.Add(browserView);
-            browser.LoadURL("http://www.google.com");
+            //Browser browser = BrowserFactory.Create();
+            //WinFormsBrowserView browserView = new WinFormsBrowserView(browser);
+            //Controls.Add(browserView);
+            //myBrowser.LoadURL("http://www.google.com");
         }
         
 
