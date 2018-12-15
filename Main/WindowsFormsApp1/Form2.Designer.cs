@@ -68,7 +68,6 @@
             this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Image = global::WindowsFormsApp1.Properties.Resources._551571;
             this.button1.Location = new System.Drawing.Point(26, 612);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(228, 84);
@@ -81,11 +80,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Stock_Market_Best_Wallpaper_23327;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._77448;
             this.ClientSize = new System.Drawing.Size(1250, 722);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cpuChart);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "CPU_Test";

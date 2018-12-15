@@ -63,29 +63,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _551571 {
+        internal static System.Drawing.Bitmap _77448 {
             get {
-                object obj = ResourceManager.GetObject("551571", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap AC7WLwWXYHzL_fAGu91FUazmRIt2Ryh8dW2IMuL7ugE {
-            get {
-                object obj = ResourceManager.GetObject("AC7WLwWXYHzL-fAGu91FUazmRIt2Ryh8dW2IMuL7ugE", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap AC7WLwWXYHzL_fAGu91FUazmRIt2Ryh8dW2IMuL7ugE1 {
-            get {
-                object obj = ResourceManager.GetObject("AC7WLwWXYHzL-fAGu91FUazmRIt2Ryh8dW2IMuL7ugE1", resourceCulture);
+                object obj = ResourceManager.GetObject("77448", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,16 +76,6 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Stock_Market_Best_Wallpaper_23327 {
-            get {
-                object obj = ResourceManager.GetObject("Stock-Market-Best-Wallpaper-23327", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
