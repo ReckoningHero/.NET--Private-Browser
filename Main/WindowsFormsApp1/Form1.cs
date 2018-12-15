@@ -30,11 +30,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             WebBrowser myBrowser = new WebBrowser();
-
-            //Browser browser = BrowserFactory.Create();
-            //WinFormsBrowserView browserView = new WinFormsBrowserView(browser);
-            //Controls.Add(browserView);
-            //myBrowser.LoadURL("http://www.google.com");
         }
         
 
@@ -101,9 +96,6 @@ namespace WindowsFormsApp1
             webBrowser1.GoBack();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
