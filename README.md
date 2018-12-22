@@ -4,3 +4,4 @@ A browser that elimates any user's information stored in the search engine. Usin
 
 References:
 CefSharp-->https://bitbucket.org/chromiumembedded/cef
+
