@@ -10,3 +10,4 @@ A browser that elimates any user's information stored in the search engine. Usin
 References and Builds:
 CefSharp-->https://bitbucket.org/chromiumembedded/cef
 ReSharper-->https://www.jetbrains.com/resharper/
+
