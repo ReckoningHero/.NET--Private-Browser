@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption></connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1544899542</timestamp>
+  <hostname>DESKTOP-EQQG4E9</hostname>
+  <os>windows</os>
+  <product>Intel® Inspector 2017 Update 4</product>
+  <buildNumber type="s32_t">531795</buildNumber>
+  <logicalCPUCount type="s32_t">8</logicalCPUCount>
+  <CPUFrequency type="s64_t">4200000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">158</CPUModel>
+  <CPUStepping type="s32_t">9</CPUStepping>
+  <CPUBrandName>Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz</CPUBrandName>
+ </rdmgr>
+ <contextValues type="bag"/>
+ <All_Configurations-All_Platforms>
+  <target_settings>
+   <selected_workload>
+    <localhost>launch</localhost>
+   </selected_workload>
+   <result_pattern>
+    <localhost>r@@@{at}</localhost>
+   </result_pattern>
+   <workloads>
+    <localhost>
+     <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>launch</targetName>
+       <launch_app.app_to_launch>C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug\WindowsFormsApp1.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug</launch_app.working_folder>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\My Inspector Results - Dot Net_Browser\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\$(VC_ExecutablePath_x64)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\DockerDesktop\version-bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Docker\Docker\Resources\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.5.267\windows\mpi\intel64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Oculus\Support\oculus-runtime</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Razer Chroma SDK\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Razer Chroma SDK\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\GtkSharp\2.12\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\130\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Common Files\Autodesk Shared</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Autodesk\Backburner</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\140\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\140\DTS\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\nodejs</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft VS Code\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git LFS</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR</value>
+        </item>
+        <item>
+         <value>bin=C:\Ruby24-x64\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Local\atom\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Local\Markdown Monster</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Local\Markdown Monster\Markdown Monster</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Roaming\npm</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\AppData\Local\GitHubDesktop\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\PHP</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\twinb0rn\.dotnet\tools</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Docker Toolbox</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>appdebug</id>
+         <value>off</value>
+        </contextValue>
+        <contextValue>
+         <id>custom_debugger</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>debug_this_problem</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>debug_using</id>
+         <value>gdb</value>
+        </contextValue>
+        <contextValue>
+         <id>heartbeat</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.include</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>managed</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>suppressions</id>
+         <value>delete</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>launch</value>
+        </contextValue>
+        <contextValue>
+         <id>traceMpi</id>
+         <value type="bool">false</value>
+        </contextValue>
+       </context>
+      </workload>
+     </launch>
+    </localhost>
+   </workloads>
+  </target_settings>
+ </All_Configurations-All_Platforms>
+</root>

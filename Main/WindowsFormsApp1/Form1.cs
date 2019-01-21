@@ -64,16 +64,16 @@ namespace WindowsFormsApp1
             // Create a browser component
             // and gives the user a site page URL!
 
-            /*String page = string.Format(@"{0}\html-resources\html\index.html", Application.StartupPath);
+            //String page = string.Format(@"{0}\html-resources\html\index.html", Application.StartupPath);
 
-            if (!File.Exists(page))
-            {
-                MessageBox.Show("Error The html file doesn't exists : " + page);
-            }
-            */
+            //if (!File.Exists(page))
+            //{
+            //    MessageBox.Show("Error The html file doesn't exists : " + page);
+            //}
+            
             chromeBrowser = new ChromiumWebBrowser("http://www.twinb0rnsoft.com");
             //Cef.Initialize(settings);
-            //chromeBrowser = new ChromiumWebBrowser(page);
+           // chromeBrowser = new ChromiumWebBrowser(page);
 
 
 
@@ -89,8 +89,6 @@ namespace WindowsFormsApp1
             chromeBrowser.BrowserSettings = browserSettings;
 
         }
-
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -118,8 +116,6 @@ namespace WindowsFormsApp1
             }
         }
 
-
-
         private void button5_Click(object sender, EventArgs e)
         {
             //webBrowser1.Navigate("www.bing.com");
@@ -143,11 +139,11 @@ namespace WindowsFormsApp1
         }
 
 
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             //webBrowser1.GoForward();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
            // webBrowser1.GoBack();

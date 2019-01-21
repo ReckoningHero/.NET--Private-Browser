@@ -112,3 +112,6 @@ C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFor
 C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug\html-resources\fonts\glyphicons-halflings-regular.woff
 C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug\html-resources\fonts\glyphicons-halflings-regular.woff2
 C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug\html-resources\html\index.html
+C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\bin\x64\Debug\dje\WindowsFormsApp1.resources.dll
+C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.Form1.dje.resources
+C:\Users\twinb0rn\Documents\GitHub\C-Sharp-.NET--Private-Browser\Main\WindowsFormsApp1\obj\x64\Debug\dje\WindowsFormsApp1.resources.dll

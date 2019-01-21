@@ -61,11 +61,13 @@
             this.cpuChart.Size = new System.Drawing.Size(899, 486);
             this.cpuChart.TabIndex = 8;
             this.cpuChart.Text = "cpuChart";
+            this.cpuChart.Click += new System.EventHandler(this.cpuChart_Click);
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Location = new System.Drawing.Point(26, 612);

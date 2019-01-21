@@ -77,5 +77,10 @@ namespace WindowsFormsApp1
             cpuThread.IsBackground = true;
             cpuThread.Start();
         }
+
+        private void cpuChart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
