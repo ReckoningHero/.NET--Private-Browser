@@ -15,10 +15,10 @@ namespace WindowsFormsApp1
         // Declare a local instance of chromium and the main form in order to execute things from here in the main thread
         private static ChromiumWebBrowser _instanceBrowser = null;
         // The form class needs to be changed according to yours
-        private static Form1 _instanceMainForm = null;
+        private static Browser _instanceMainForm = null;
 
 
-        public CefCustomObject(ChromiumWebBrowser originalBrowser, Form1 mainForm)
+        public CefCustomObject(ChromiumWebBrowser originalBrowser, Browser mainForm)
         {
             _instanceBrowser = originalBrowser;
             _instanceMainForm = mainForm;

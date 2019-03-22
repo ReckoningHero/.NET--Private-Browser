@@ -63,6 +63,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _476283 {
+            get {
+                object obj = ResourceManager.GetObject("476283", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _77448 {
             get {
                 object obj = ResourceManager.GetObject("77448", resourceCulture);
@@ -76,6 +86,26 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fast_backward {
+            get {
+                object obj = ResourceManager.GetObject("Fast-backward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap windows_media_player_skip_forward_button_md {
+            get {
+                object obj = ResourceManager.GetObject("windows-media-player-skip-forward-button-md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
