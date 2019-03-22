@@ -26,6 +26,7 @@ using System.Threading;
 using System.Diagnostics;//Importing Diagnostics and Threading extensions
 
 
+
 namespace WindowsFormsApp1
 {
     public partial class Browser : Form
@@ -144,6 +145,7 @@ namespace WindowsFormsApp1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+                
         }
 
         private void button1_Click(object sender, EventArgs e)

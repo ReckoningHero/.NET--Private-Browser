@@ -195,6 +195,7 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.AutoSize = true;
             this.panel2.Location = new System.Drawing.Point(0, 103);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1894, 863);
