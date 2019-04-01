@@ -2674,3 +2674,228 @@ C:\fakepath(87,10-42): warning X3571: pow(f, e) will not work for negative f, us
 
 [0327/115018.749:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
 [0327/115018.749:ERROR:command_buffer_proxy_impl.cc(101)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[0331/102914.569:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0331/102919.577:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190327/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0331/102940.286:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0331/102941.898:INFO:CONSOLE(204)] "Application Cache is deprecated in non-secure contexts, and will be restricted to secure contexts in M69, around September 2018. Please consider migrating your application to HTTPS, and eventually shifting over to Service Workers. See https://goo.gl/rStTGz for more details.", source: https://z.moatads.com/keplerpaypaldcm168224283233/moatad.js (204)
+[0331/102941.925:INFO:CONSOLE(4)] "The deviceorientation event is deprecated on insecure origins, and support will be removed in the future. You should consider switching your application to a secure origin, such as HTTPS. See https://goo.gl/rStTGz for more details.", source:  (4)
+[0331/102941.925:INFO:CONSOLE(4)] "The deviceorientation events are blocked by feature policy. See https://github.com/WICG/feature-policy/blob/master/features.md#sensor-features", source:  (4)
+[0331/102942.280:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.280:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.280:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.280:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.882:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.883:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.883:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102942.883:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0331/102946.412:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190327/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0331/102951.757:INFO:CONSOLE(14)] "Refused to load the script 'https://cm.g.doubleclick.net/pixel?google_nid=twitter_dbm&google_cm&tpm_cb=partnerIdSyncComplete&_=1554046191255' because it violates the following Content Security Policy directive: "script-src https://ssl.google-analytics.com https://twitter.com 'unsafe-eval' https://*.twimg.com https://api.twitter.com https://analytics.twitter.com https://publish.twitter.com https://ton.twitter.com https://syndication.twitter.com https://www.google.com https://platform.twitter.com https://www.google-analytics.com blob: 'nonce-Zbxc6bUl0bxdnWpbNmCkvg==' 'self'".
+", source: https://abs.twimg.com/k/en/init.en.8a4a4f6c79f1ffb4dcf3.js (14)
+[0331/102951.797:ERROR:quota_settings.cc(111)] Unable to compute QuotaSettings.
+[0331/102951.797:WARNING:quota_manager.cc(1625)] No storage quota provided in QuotaSettings.
+[0331/102954.887:INFO:CONSOLE(14)] "Refused to load the script 'https://cm.g.doubleclick.net/pixel?google_nid=twitter_dbm&google_cm&tpm_cb=partnerIdSyncComplete&_=1554046191257' because it violates the following Content Security Policy directive: "script-src https://ssl.google-analytics.com https://twitter.com 'unsafe-eval' https://*.twimg.com https://api.twitter.com https://analytics.twitter.com https://publish.twitter.com https://ton.twitter.com https://syndication.twitter.com https://www.google.com https://platform.twitter.com https://www.google-analytics.com blob: 'nonce-Zbxc6bUl0bxdnWpbNmCkvg==' 'self'".
+", source: https://abs.twimg.com/k/en/init.en.8a4a4f6c79f1ffb4dcf3.js (14)
+[0331/103002.889:INFO:CONSOLE(14)] "Refused to load the script 'https://cm.g.doubleclick.net/pixel?google_nid=twitter_dbm&google_cm&tpm_cb=partnerIdSyncComplete&_=1554046191259' because it violates the following Content Security Policy directive: "script-src https://ssl.google-analytics.com https://twitter.com 'unsafe-eval' https://*.twimg.com https://api.twitter.com https://analytics.twitter.com https://publish.twitter.com https://ton.twitter.com https://syndication.twitter.com https://www.google.com https://platform.twitter.com https://www.google-analytics.com blob: 'nonce-Zbxc6bUl0bxdnWpbNmCkvg==' 'self'".
+", source: https://abs.twimg.com/k/en/init.en.8a4a4f6c79f1ffb4dcf3.js (14)
+[0331/103006.061:INFO:CONSOLE(14)] "Refused to load the script 'https://cm.g.doubleclick.net/pixel?google_nid=twitter_dbm&google_cm&tpm_cb=partnerIdSyncComplete&_=1554046191261' because it violates the following Content Security Policy directive: "script-src https://ssl.google-analytics.com https://twitter.com 'unsafe-eval' https://*.twimg.com https://api.twitter.com https://analytics.twitter.com https://publish.twitter.com https://ton.twitter.com https://syndication.twitter.com https://www.google.com https://platform.twitter.com https://www.google-analytics.com blob: 'nonce-Zbxc6bUl0bxdnWpbNmCkvg==' 'self'".
+", source: https://abs.twimg.com/k/en/init.en.8a4a4f6c79f1ffb4dcf3.js (14)
+[0331/103006.738:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103006.738:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103006.881:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103006.881:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103006.894:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 3
+[0331/103007.975:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103007.976:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103007.995:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 5
+[0331/103008.191:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 7
+[0331/103008.270:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103008.276:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103008.291:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 9
+[0331/103009.978:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103010.265:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103010.271:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103010.294:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 11
+[0331/103010.402:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103010.402:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103011.406:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.408:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.410:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.423:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.521:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.521:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.844:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.845:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.941:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103011.944:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.042:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.045:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.300:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.302:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.320:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103012.553:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103012.553:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103013.165:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103013.165:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103013.261:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103013.261:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103014.456:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103014.456:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103014.657:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103014.657:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103015.428:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103015.428:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103016.291:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103016.291:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103016.555:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103016.555:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103018.274:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103018.275:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103018.293:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 17
+[0331/103018.362:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103018.363:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103018.381:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 19
+[0331/103019.467:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103019.469:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103019.474:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 21
+[0331/103019.613:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103019.614:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103019.625:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 23
+[0331/103019.777:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103019.777:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103019.786:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 25
+[0331/103019.925:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103019.925:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103019.933:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 27
+[0331/103020.015:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103020.015:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103020.025:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 29
+[0331/103021.567:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103021.569:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103021.594:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 31
+[0331/103037.806:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103037.806:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103037.891:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103037.891:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103037.909:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 35
+[0331/103038.977:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103038.977:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103038.984:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 37
+[0331/103039.040:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.040:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.046:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.047:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.048:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.074:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.274:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.275:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.353:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.353:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.367:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.369:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.372:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.671:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.673:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.675:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.775:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.775:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.775:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.777:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.871:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103039.872:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103040.978:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103051.399:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103051.399:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103051.482:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103051.482:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103051.500:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 41
+[0331/103052.567:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103052.567:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103052.580:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 43
+[0331/103052.667:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103052.667:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103052.677:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 45
+[0331/103052.876:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103052.876:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103052.890:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 47
+[0331/103053.065:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103053.065:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103053.082:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 49
+[0331/103053.536:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103053.543:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103053.553:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 51
+[0331/103053.921:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103053.921:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103053.928:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 53
+[0331/103054.670:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103054.670:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103110.573:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103110.573:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103110.653:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103110.653:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103110.669:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 59
+[0331/103111.749:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103111.750:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103111.754:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 61
+[0331/103112.002:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103112.002:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103112.011:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 63
+[0331/103113.840:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103113.840:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103113.856:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 65
+[0331/103136.215:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103136.215:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103136.330:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103136.330:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103137.406:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103137.415:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103137.427:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 71
+[0331/103139.417:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.648:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.648:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.849:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.849:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.866:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.866:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103140.866:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103141.014:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103141.317:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103141.317:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103141.336:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 73
+[0331/103141.391:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103141.400:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103141.409:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 75
+[0331/103142.402:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103142.519:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103142.520:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103142.799:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103142.799:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/103148.983:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103148.983:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103149.003:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 77
+[0331/103149.088:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103149.088:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103149.105:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 79
+[0331/103150.198:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103150.198:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103150.214:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 81
+[0331/103150.337:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 83
+[0331/103150.424:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103150.424:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103150.536:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103150.536:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103150.544:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 87
+[0331/103150.636:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103150.636:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103150.651:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 89
+[0331/103150.870:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: no supported streams"}
+[0331/103150.870:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR DEMUXER_ERROR_NO_SUPPORTED_STREAMS
+[0331/103152.202:INFO:CONSOLE(9)] "Uncaught TypeError: Cannot read property 'httpClient' of undefined", source: https://abs.twimg.com/k/en/13.video_player.en.c56ff83cbe745989c186.js (9)
+[0331/104219.851:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[0331/104219.852:ERROR:command_buffer_proxy_impl.cc(101)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[0401/013444.344:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0401/013449.484:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190327/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0401/013500.888:ERROR:broker_win.cc(55)] Error reading broker pipe: The pipe has been ended. (0x6D)
+[0401/013500.891:ERROR:implementation_base.cc(161)] ContextResult::kFatalFailure: TransferBuffer::Initialize() failed
+[0401/013519.423:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0401/013522.630:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[0401/013522.631:ERROR:command_buffer_proxy_impl.cc(101)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
