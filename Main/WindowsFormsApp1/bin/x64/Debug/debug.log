@@ -2899,3 +2899,74 @@ C:\fakepath(87,10-42): warning X3571: pow(f, e) will not work for negative f, us
 [0401/013519.423:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
 [0401/013522.630:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
 [0401/013522.631:ERROR:command_buffer_proxy_impl.cc(101)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[0407/110520.802:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0407/110525.697:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190403/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0407/110530.280:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/Source_Code/ (1)
+[0407/110530.453:INFO:CONSOLE(1)] "Uncaught TagError: adsbygoogle.push() error: Only one 'enable_page_level_ads' allowed per page.", source: http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js (1)
+[0407/110735.088:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0407/110735.693:WARNING:angle_platform_impl.cc(59)] compileToBinary(228): 
+C:\fakepath(65,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(87,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0407/110737.086:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0407/110737.086:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0407/110737.086:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0407/110737.087:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0407/110741.194:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190403/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0407/110746.957:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[0407/110746.957:ERROR:command_buffer_proxy_impl.cc(101)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[0407/110753.659:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0407/110755.375:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/GameReviews/ (1)
+[0407/110757.016:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/VR_Game/ (1)
+[0407/110757.258:INFO:CONSOLE(26)] "%cA-Frame:warn %cPut the A-Frame <script> tag in the <head> of the HTML *before* the scene to ensure everything for A-Frame is properly registered before they are used from HTML.%c ", source: https://aframe.io/releases/0.8.0/aframe.min.js (26)
+[0407/110757.278:INFO:CONSOLE(569)] "A-Frame Version: 0.8.0 (Date 2018-03-11, Commit #82934b02)", source: https://aframe.io/releases/0.8.0/aframe.min.js (569)
+[0407/110757.278:INFO:CONSOLE(569)] "three Version:", source: https://aframe.io/releases/0.8.0/aframe.min.js (569)
+[0407/110757.278:INFO:CONSOLE(569)] "WebVR Polyfill Version:", source: https://aframe.io/releases/0.8.0/aframe.min.js (569)
+[0407/110757.299:INFO:CONSOLE(100)] "THREE.WebGLRenderer", source: https://aframe.io/releases/0.8.0/aframe.min.js (100)
+[0407/110757.321:INFO:CONSOLE(114)] "THREE.WebGLRenderer: .shadowMap.renderReverseSided has been removed. Set Material.shadowSide instead.", source: https://aframe.io/releases/0.8.0/aframe.min.js (114)
+[0407/110757.321:INFO:CONSOLE(114)] "THREE.WebGLRenderer: .shadowMap.renderSingleSided has been removed. Set Material.shadowSide instead.", source: https://aframe.io/releases/0.8.0/aframe.min.js (114)
+[0407/110757.327:INFO:CONSOLE(8)] "[physics] `debug` cannot be changed dynamically.", source: https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js (8)
+[0413/230312.701:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0413/230312.885:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token if", source: http://www.twinb0rnsoft.com/ (1)
+[0413/230313.557:WARNING:angle_platform_impl.cc(59)] compileToBinary(228): 
+C:\fakepath(65,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(87,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0413/230314.142:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0413/230314.144:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0413/230314.145:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0413/230314.145:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0413/230317.619:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190408/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0413/230335.409:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 15
+[0413/230335.412:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 13
+[0413/230335.414:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 11
+[0413/230335.426:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 9
+[0413/230335.429:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 7
+[0413/230335.433:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 5
+[0413/230335.435:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 3
+[0413/230335.437:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 1
+[0413/230335.440:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 17
+[0424/030839.248:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0424/030839.353:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token if", source: http://www.twinb0rnsoft.com/ (1)
+[0424/030842.204:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/030842.204:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/030842.204:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/030842.204:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/030845.633:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190417/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0424/030904.139:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0424/030904.244:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token if", source: http://www.twinb0rnsoft.com/ (1)
+[0424/030909.762:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190417/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0424/030910.284:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/about/ (1)
+[0424/030914.407:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0424/125023.135:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0424/125023.239:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token if", source: http://www.twinb0rnsoft.com/ (1)
+[0424/125025.336:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/125025.337:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/125025.337:INFO:CONSOLE(1)] "Failed parsing 'srcset' attribute value since it has an unknown descriptor.", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/125025.337:INFO:CONSOLE(1)] "Dropped srcset candidate "https://reckoninghero.github.io/website2//assets/img/posts/Artificial"", source: http://www.twinb0rnsoft.com/assets/js/bundle.js (1)
+[0424/125029.192:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190417/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0424/125053.912:WARNING:spdy_session.cc(3097)] Received HEADERS for invalid stream 101
+[0424/125140.665:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot read property 'install' of undefined", source: https://duckduckgo.com/d2611.js (1)
+[0425/211258.862:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected identifier", source: http://www.twinb0rnsoft.com/ (1)
+[0425/211259.069:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token if", source: http://www.twinb0rnsoft.com/ (1)
+[0425/211305.974:INFO:CONSOLE(0)] "The resource http://pagead2.googlesyndication.com/pagead/js/r20190422/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
