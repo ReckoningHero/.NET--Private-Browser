@@ -11,4 +11,3 @@ Here is an example:
 
 References and Builds:
 CefSharp --> https://bitbucket.org/chromiumembedded/cef
-ReSharper --> https://www.jetbrains.com/resharper/
